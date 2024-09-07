@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #000;
+
+}
+
+.left_header {
+    margin: 19px 0 18px;
+
+}
+
+.left_header,
+.right_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.header_button {
+    width: 26px;
+    height: 26.79px;
+    top: 28.21px;
+    left: 316px;
+    gap: 0px;
+    opacity: 0px;
+    background: #E8E8E8;
+
+    background: #000;
+    border: none;
+
+}
+
+.brand_block {
+    display: flex;
+    align-items: center;
+    background: #F1E4E6;
+}
+
+.brand_mark {
+    display: grid;
+    grid-template: 52px 40px / 12px 1fr;
+    gap: 10px;
+    text-align: left;
+}
+
+.gorizontal_draw {
+    grid-area: 1 / 1 / span1;
+    left: 54%;
+    right: 45.25%;
+    top: 12.48%;
+    bottom: 84.38%;
+
+    background: #F16D7F;
+
+}
+
+.brand_h1 {
+    padding: 5px 0 0;
+
+    left: 55.75%;
+    right: 20.69%;
+    top: 12.48%;
+    bottom: 84.34%;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+
+    color: #222222;
+
+
+}
+
+.brand_h2 {
+    padding: 10px 0 0;
+
+    left: 55.75%;
+    right: 20.69%;
+    top: 12.48%;
+    bottom: 84.34%;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #222222;
+
+
+}
+
+.fashion {
+    color: #F16D7F;
+}
+
+.agitation_block {
+    display: grid;
+    grid-template: 260px 180px/ repeat(3, 360px);
+    margin: 65px 230px 96px;
+    gap: 30px;
+}
+
+
+.agitation_item_1 {
+    grid-area: 1/1/1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background-image: url(images/for_women.png);
+}
+
+.agitation_item_2 {
+    grid-area: 1/2/1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background-image: url(images/for_men.jpg);
+
+}
+
+.agitation_item_3 {
+    grid-area: 1/3/1/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background-image: url(images/for_kids.jpg);
+
+}
+
+.agitation_item_lower {
+    grid-area: 2/1/2/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background-image: url(images/accesories.jpg);
+}
+
+.fetured_block {
+    margin: 96px 230px;
+}
+
+.fetured_block_header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.fetured_header_h2 {
+    left: 44.4%;
+    right: 44.23%;
+    top: 50.26%;
+    bottom: 48.51%;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    /* identical to box height */
+
+    color: #222222;
+
+}
+
+.fetured_header_p {
+    left: 39.44%;
+    right: 39.56%;
+    top: 51.69%;
+    bottom: 47.73%;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    color: #9F9F9F;
+
+}
+
+.items_block {
+    display: grid;
+    grid-template: 581px 581px/ repeat(3, 1fr);
+    gap: 30px;
+
+
+}
+
+.fetured_item {
+    background: #f8f8f8;
+}
+
+.items_section {
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    gap: 12px;
+    margin: 24px 28px 20px 16px;
+
+
+}
+
+.item_h2 {
+
+    left: 39.88%;
+    right: 50.87%;
+    top: 69.11%;
+    bottom: 30.35%;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+
+    color: #000000;
+
+
+}
+
+.item_p {
+
+    left: 39.78%;
+    right: 40.55%;
+    top: 70.09%;
+    bottom: 28.17%;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #5D5D5D;
+
+
+}
+
+.item_price {
+
+    left: 39.9%;
+    right: 56.82%;
+    top: 72.44%;
+    bottom: 26.91%;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #F16D7F;
+
+
+}
+
+.fetured_block_footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.browse_all_button {
+    width: 212px;
+    height: 48px;
+    top: 2817px;
+    left: 695px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    color: #F26376;
+    border: 1px solid #FF6A6A;
+    background: none;
+}
