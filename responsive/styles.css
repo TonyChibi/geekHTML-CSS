@@ -45,6 +45,10 @@
     background: #F1E4E6;
 }
 
+.brand_img {
+    max-width: 810px;
+}
+
 .brand_mark {
     display: grid;
     grid-template: 52px 40px / 12px 1fr;
@@ -120,6 +124,7 @@
     justify-content: center;
     flex-flow: column;
     background-image: url(images/for_women.png);
+    background-size: cover;
 }
 
 .agitation_item_2 {
@@ -129,7 +134,7 @@
     justify-content: center;
     flex-flow: column;
     background-image: url(images/for_men.jpg);
-
+    background-size: cover;
 }
 
 .agitation_item_3 {
@@ -139,7 +144,7 @@
     justify-content: center;
     flex-flow: column;
     background-image: url(images/for_kids.jpg);
-
+    background-size: cover;
 }
 
 .agitation_item_lower {
@@ -149,6 +154,7 @@
     justify-content: center;
     flex-flow: column;
     background-image: url(images/accesories.jpg);
+    background-size: cover;
 }
 
 .fetured_block {
@@ -290,4 +296,71 @@
     color: #F26376;
     border: 1px solid #FF6A6A;
     background: none;
+}
+
+@media(max-width: 768px) {
+
+    /* tablet styles */
+
+    .header {
+        max-width: 785px;
+        justify-content: space-between;
+
+    }
+
+    .left_header,
+    .right_header {
+        margin: 18px 32px;
+    }
+
+    .brand_img {
+        max-width: 360px;
+    }
+
+    .brand_mark {
+
+        grid-template: 36px 20px / 6px 1fr;
+        gap: 0px;
+        text-align: left;
+    }
+
+    .brand_h1 {
+        padding: 0;
+        line-height: 36px;
+        font-size: 32px;
+    }
+
+    .brand_h2 {
+        padding: 0;
+        line-height: 20px;
+        font-size: 18px;
+    }
+
+    .agitation_block {
+        max-width: 768px;
+        gap: 15px;
+        grid-template: 130px 90px/ repeat(3, 180px);
+        margin: 32px 115px 48px;
+    }
+
+
+    .fetured_block {
+        max-width: 785px;
+        margin: 48px 115px;
+    }
+
+    .items_block {
+        grid-template: repeat(3, 460px)/ repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .items_img {
+        max-width: 100%;
+
+    }
+
+    .items_section {
+        gap: 6px;
+        margin: 12px 14px 10px 8px;
+    }
 }
