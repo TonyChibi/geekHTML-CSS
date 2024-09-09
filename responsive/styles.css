@@ -3,11 +3,17 @@
     padding: 0;
 }
 
+.center {
+    padding-left: calc(50% - 504px);
+    padding-right: calc(50% - 504px);
+}
+
 .header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background: #000;
+    background-size: cover;
 
 }
 
@@ -157,6 +163,14 @@
     background-size: cover;
 }
 
+.agitation_h4 {
+    color: #fff;
+}
+
+.agitation_h3 {
+    color: #F16D7F;
+}
+
 .fetured_block {
     margin: 96px 230px;
 }
@@ -302,6 +316,11 @@
 
     /* tablet styles */
 
+    .center {
+        padding-left: calc(50% - 376px);
+        padding-right: calc(50% - 376px);
+    }
+
     .header {
         max-width: 785px;
         justify-content: space-between;
@@ -343,7 +362,6 @@
         margin: 32px 115px 48px;
     }
 
-
     .fetured_block {
         max-width: 785px;
         margin: 48px 115px;
@@ -362,5 +380,80 @@
     .items_section {
         gap: 6px;
         margin: 12px 14px 10px 8px;
+    }
+}
+
+@media(max-width: 426px) {
+    .center {
+        padding: 0;
+    }
+
+
+    .left_header {
+        margin: 28px 25px;
+    }
+
+    .right_header {
+        margin: 28px 30px;
+
+    }
+
+    .menu_logo {
+        order: 1;
+    }
+
+    .profile_logo,
+    .cart_logo {
+        width: 0;
+        opacity: 0;
+    }
+
+    .brand_block {
+        display: flex;
+        justify-content: center;
+        height: 360px;
+
+    }
+
+    .brand_mark {
+        gap: 10px;
+    }
+
+    .brand_img {
+        width: 0;
+    }
+
+    .agitation_block {
+        margin: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fetured_block {
+        margin: 30px 8px;
+    }
+
+    .agitation_item_1,
+    .agitation_item_2,
+    .agitation_item_3 {
+        width: -webkit-fill-available;
+        height: 60vw;
+        background-size: contain;
+    }
+
+    .agitation_item_lower {
+        width: -webkit-fill-available;
+        height: 64px;
+        background-size: contain;
+    }
+
+    .items_block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .items_img {
+        width: -webkit-fill-available;
     }
 }
