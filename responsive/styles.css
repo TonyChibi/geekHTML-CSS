@@ -4,23 +4,19 @@
 }
 
 .center {
-    padding-left: calc(50% - 504px);
-    padding-right: calc(50% - 504px);
+    padding-left: calc(50% - 800px);
+    padding-right: calc(50% - 800px);
 }
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background: #000;
     background-size: cover;
-
+    padding: 19px 180px 18px;
 }
 
-.left_header {
-    margin: 19px 0 18px;
-
-}
 
 .left_header,
 .right_header {
@@ -46,13 +42,14 @@
 }
 
 .brand_block {
+    max-width: 1600px;
     display: flex;
     align-items: center;
     background: #F1E4E6;
 }
 
 .brand_img {
-    max-width: 810px;
+    max-width: 50%;
 }
 
 .brand_mark {
@@ -116,9 +113,10 @@
 }
 
 .agitation_block {
+    max-width: 1600px;
     display: grid;
-    grid-template: 260px 180px/ repeat(3, 360px);
-    margin: 65px 230px 96px;
+    grid-template: 260px 180px/ repeat(3, 1fr);
+    margin: 65px 0px 96px 0;
     gap: 30px;
 }
 
@@ -171,9 +169,7 @@
     color: #F16D7F;
 }
 
-.fetured_block {
-    margin: 96px 230px;
-}
+
 
 .fetured_block_header {
     display: flex;
@@ -217,8 +213,11 @@
 }
 
 .items_block {
+    padding-left: calc(50% - 510px);
+    padding-right: calc(50% - 510px);
+
     display: grid;
-    grid-template: 581px 581px/ repeat(3, 1fr);
+    grid-template: 581px 581px/ repeat(3, 332px);
     gap: 30px;
 
 
@@ -226,6 +225,10 @@
 
 .fetured_item {
     background: #f8f8f8;
+}
+
+.items_img {
+    width: -webkit-fill-available;
 }
 
 .items_section {
@@ -329,7 +332,7 @@
 
     .left_header,
     .right_header {
-        margin: 18px 32px;
+        padding: 0 32px;
     }
 
     .brand_img {
@@ -358,8 +361,9 @@
     .agitation_block {
         max-width: 768px;
         gap: 15px;
-        grid-template: 130px 90px/ repeat(3, 180px);
-        margin: 32px 115px 48px;
+        grid-template: 130px 90px/ repeat(3, 1fr);
+        margin-top: 32px;
+        margin-bottom: 48px;
     }
 
     .fetured_block {
@@ -373,7 +377,7 @@
     }
 
     .items_img {
-        max-width: 100%;
+        width: 100%;
 
     }
 
@@ -389,13 +393,9 @@
     }
 
 
-    .left_header {
-        margin: 28px 25px;
-    }
-
+    .left_header,
     .right_header {
-        margin: 28px 30px;
-
+        padding: 6px 32px;
     }
 
     .menu_logo {
@@ -456,4 +456,5 @@
     .items_img {
         width: -webkit-fill-available;
     }
+
 }
