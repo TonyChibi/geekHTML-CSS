@@ -218,7 +218,7 @@
     padding-right: calc(50% - 510px);
 
     display: grid;
-    grid-template: 581px 581px/ repeat(3, 332px);
+    grid-template: 581px 581px/ repeat(3, 31%);
     gap: 30px;
 
 
@@ -336,14 +336,12 @@
         padding: 6px 32px;
     }
 
-    .brand_img {
-        max-width: 360px;
-    }
+
 
     .brand_mark {
 
         grid-template: 36px 20px / 6px 1fr;
-        gap: 0px;
+        gap: 5px;
         text-align: left;
     }
 
@@ -369,11 +367,11 @@
 
     .fetured_block {
         max-width: 785px;
-        margin: 48px 115px;
+        margin: 48px 30px;
     }
 
     .items_block {
-        grid-template: repeat(3, 460px)/ repeat(2, 1fr);
+        grid-template: repeat(3, 520px)/ repeat(2, 1fr);
         gap: 15px;
     }
 
