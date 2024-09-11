@@ -114,7 +114,7 @@
 }
 
 .agitation_block {
-    max-width: 1600px;
+    max-width: 1170px;
     display: grid;
     grid-template: 260px 180px/ repeat(3, 1fr);
     margin: 65px 0px 96px 0;
@@ -130,6 +130,7 @@
     flex-flow: column;
     background-image: url(images/for_women.png);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .agitation_item_2 {
@@ -140,6 +141,8 @@
     flex-flow: column;
     background-image: url(images/for_men.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .agitation_item_3 {
@@ -150,6 +153,8 @@
     flex-flow: column;
     background-image: url(images/for_kids.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .agitation_item_lower {
@@ -160,6 +165,8 @@
     flex-flow: column;
     background-image: url(images/accesories.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .agitation_h4 {
