@@ -114,6 +114,9 @@
 }
 
 .agitation_block {
+    padding-left: calc(50% - 585px);
+    padding-right: calc(50% - 585px);
+
     max-width: 1170px;
     display: grid;
     grid-template: 260px 180px/ repeat(3, 1fr);
