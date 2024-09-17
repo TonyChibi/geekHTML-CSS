@@ -14,9 +14,7 @@
     align-items: center;
     background: #000;
     background-size: cover;
-
 }
-
 
 .left_header,
 .right_header {
@@ -27,7 +25,6 @@
     padding: 19px 180px 18px;
 }
 
-
 .header_button {
     width: 26px;
     height: 26.79px;
@@ -35,11 +32,81 @@
     left: 316px;
     gap: 0px;
     opacity: 0px;
-    background: #E8E8E8;
-
+    /* background: #E8E8E8; */
     background: #000;
     border: none;
+}
 
+.drop_menu {
+    display: none;
+    position: absolute;
+    /* margin-top: 24px; */
+    width: 320px;
+    padding: 33px 0 0 0;
+    top: 44px;
+}
+
+.drop_menu_inner {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    background-color: #fff;
+    gap: 20px;
+}
+
+
+/* .drop_menu:hover {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} */
+
+.menu_logo:focus .drop_menu {
+    display: flex;
+    justify-content: end;
+}
+
+.menu_logo:hover .drop_menu {
+    display: flex;
+    justify-content: end;
+}
+
+.menu_h2 {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+    text-align: left;
+}
+
+.category {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    color: #F16D7F;
+}
+
+.link {
+    text-decoration: none;
+    color: unset;
+}
+
+.category_list {
+    list-style-type: none;
+    text-align: start;
+    padding-left: 20px;
+}
+
+.category_item {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    color: #6F6E6E;
 }
 
 .brand_block {
@@ -66,47 +133,35 @@
     right: 45.25%;
     top: 12.48%;
     bottom: 84.38%;
-
     background: #F16D7F;
-
 }
 
 .brand_h1 {
     padding: 5px 0 0;
-
     left: 55.75%;
     right: 20.69%;
     top: 12.48%;
     bottom: 84.34%;
-
     font-family: 'Lato';
     font-style: normal;
     font-weight: 900;
     font-size: 48px;
     line-height: 58px;
-
     color: #222222;
-
-
 }
 
 .brand_h2 {
     padding: 10px 0 0;
-
     left: 55.75%;
     right: 20.69%;
     top: 12.48%;
     bottom: 84.34%;
-
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
-
     color: #222222;
-
-
 }
 
 .fashion {
@@ -116,14 +171,12 @@
 .agitation_block {
     padding-left: calc(50% - 585px);
     padding-right: calc(50% - 585px);
-
     max-width: 1170px;
     display: grid;
     grid-template: 260px 180px/ repeat(3, 1fr);
     margin: 65px 0px 96px 0;
     gap: 30px;
 }
-
 
 .agitation_item_1 {
     grid-area: 1/1/1/1;
@@ -145,7 +198,6 @@
     background-image: url(images/for_men.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .agitation_item_3 {
@@ -157,7 +209,6 @@
     background-image: url(images/for_kids.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .agitation_item_lower {
@@ -169,7 +220,6 @@
     background-image: url(images/accesories.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .agitation_h4 {
@@ -179,8 +229,6 @@
 .agitation_h3 {
     color: #F16D7F;
 }
-
-
 
 .fetured_block_header {
     display: flex;
@@ -194,16 +242,13 @@
     right: 44.23%;
     top: 50.26%;
     bottom: 48.51%;
-
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 36px;
     /* identical to box height */
-
     color: #222222;
-
 }
 
 .fetured_header_p {
@@ -211,27 +256,21 @@
     right: 39.56%;
     top: 51.69%;
     bottom: 47.73%;
-
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     /* identical to box height */
-
     color: #9F9F9F;
-
 }
 
 .items_block {
-    padding-left: calc(50% - 510px);
-    padding-right: calc(50% - 510px);
-
+    padding-left: calc(50% - 585px);
+    padding-right: calc(50% - 585px);
     display: grid;
-    grid-template: 581px 581px/ repeat(3, 31%);
+    grid-template: 581px 581px/ repeat(3, 31.6%);
     gap: 30px;
-
-
 }
 
 .fetured_item {
@@ -248,63 +287,46 @@
     align-items: start;
     gap: 12px;
     margin: 24px 28px 20px 16px;
-
-
 }
 
 .item_h2 {
-
     left: 39.88%;
     right: 50.87%;
     top: 69.11%;
     bottom: 30.35%;
-
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
     /* identical to box height */
-
     color: #000000;
-
-
 }
 
 .item_p {
-
     left: 39.78%;
     right: 40.55%;
     top: 70.09%;
     bottom: 28.17%;
-
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-
     color: #5D5D5D;
-
-
 }
 
 .item_price {
-
     left: 39.9%;
     right: 56.82%;
     top: 72.44%;
     bottom: 26.91%;
-
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-
     color: #F16D7F;
-
-
 }
 
 .fetured_block_footer {
@@ -326,47 +348,230 @@
     background: none;
 }
 
+.footer {
+    margin-top: 95px;
+}
+
+.benefits {
+    padding: 103px 230px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    background: #222224;
+    ;
+    gap: 30px;
+}
+
+.benefits_section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.benefits_h2 {
+    left: 21.71%;
+    right: 70.98%;
+    top: 81.58%;
+    bottom: 17.79%;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    /* identical to box height */
+    color: #FBFBFB;
+}
+
+.benefits_p {
+    left: 14.38%;
+    right: 63.12%;
+    top: 82.63%;
+    bottom: 16.48%;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+}
+
+.subscribers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-image: url(images/footer_background.png);
+    background-size: cover;
+    padding-left: calc(50% - 460px);
+    padding-right: calc(50% - 460px);
+    padding-bottom: 96px;
+    padding-top: 96px;
+    gap: 223px;
+}
+
+.costumers_comment {
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.comment_img {
+    max-width: 96px;
+}
+
+.comment_p {
+    left: 14.39%;
+    right: 63.14%;
+    top: 49.78%;
+    bottom: 28.13%;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+}
+
+.subscribe_block {
+    max-width: 557px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.subscribe_h2 {
+    left: 50.81%;
+    right: 14.38%;
+    top: 33.48%;
+    bottom: 52.9%;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167.2%;
+    /* or 40px */
+    text-align: center;
+    color: #222224;
+}
+
+.subscribe_p {
+    width: max-content;
+    left: 50.81%;
+    right: 14.38%;
+    top: 33.48%;
+    bottom: 52.9%;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167.2%;
+    /* or 30px */
+    text-align: center;
+    color: #222224;
+}
+
+.subscribe_form {
+    display: flex;
+    left: 57.31%;
+    right: 26.69%;
+    top: 54.24%;
+    bottom: 34.82%;
+}
+
+.email_input {
+    border-radius: 30px 0% 0% 30px;
+    padding: 8px 64px 8px 22px;
+    border: none;
+    background: #E1E1E1;
+    color: #222224;
+}
+
+.input_button {
+    border-radius: 0 30px 30px 0;
+    padding: 8px;
+    border: none;
+    background: #F16D7F;
+    color: #fff;
+}
+
+.footer_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 230px;
+    background: #222224;
+    ;
+}
+
+.manufacturer {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    color: #FBFBFB;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.icon_button {
+    border: none;
+    width: fit-content;
+    height: fit-content;
+}
+
+.icon {
+    background: #fff;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+}
+
+.icon:hover {
+    fill: #fff;
+    background: #F16D7F;
+}
+
 @media(max-width: 768px) {
-
     /* tablet styles */
-
     .center {
         padding-left: calc(50% - 376px);
         padding-right: calc(50% - 376px);
     }
-
     .header {
         max-width: 785px;
         justify-content: space-between;
-
     }
-
     .left_header,
     .right_header {
         padding: 6px 32px;
     }
-
-
-
     .brand_mark {
-
         grid-template: 36px 20px / 6px 1fr;
         gap: 5px;
         text-align: left;
     }
-
     .brand_h1 {
         padding: 0;
         line-height: 36px;
         font-size: 32px;
     }
-
     .brand_h2 {
         padding: 0;
         line-height: 20px;
         font-size: 18px;
     }
-
     .agitation_block {
         max-width: 768px;
         gap: 15px;
@@ -374,25 +579,39 @@
         margin-top: 32px;
         margin-bottom: 48px;
     }
-
     .fetured_block {
         max-width: 785px;
         margin: 48px 30px;
     }
-
     .items_block {
         grid-template: repeat(3, 520px)/ repeat(2, 1fr);
         gap: 15px;
     }
-
     .items_img {
         width: 100%;
-
     }
-
     .items_section {
         gap: 6px;
         margin: 12px 14px 10px 8px;
+    }
+    .benefits {
+        flex-direction: column;
+        align-items: center;
+    }
+    .benefits_section {
+        width: 360px;
+    }
+    .subscribers {
+        background-color: #F4F4F4;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: column;
+        background-position: 21% 50px;
+        padding: 64px 105px;
+        gap: 48px;
+    }
+    .footer_footer {
+        justify-content: space-around;
     }
 }
 
@@ -400,70 +619,76 @@
     .center {
         padding: 0;
     }
-
-
     .left_header,
     .right_header {
         padding: 6px 32px;
     }
-
-    .menu_logo {
-        order: 1;
-    }
-
     .profile_logo,
     .cart_logo {
-        width: 0;
-        opacity: 0;
+        display: none;
     }
-
     .brand_block {
         display: flex;
         justify-content: center;
         height: 360px;
-
     }
-
     .brand_mark {
         gap: 10px;
     }
-
     .brand_img {
         width: 0;
     }
-
     .agitation_block {
         margin: 20px 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
     .fetured_block {
         margin: 30px 8px;
     }
-
     .agitation_item_1,
     .agitation_item_2,
     .agitation_item_3 {
         width: -webkit-fill-available;
         height: 60vw;
-        background-size: contain;
     }
-
     .agitation_item_lower {
         width: -webkit-fill-available;
         height: 64px;
-        background-size: contain;
     }
-
     .items_block {
         display: flex;
         flex-direction: column;
     }
-
     .items_img {
         width: -webkit-fill-available;
     }
-
+    .benefits {
+        padding: 48px 13px 80px;
+    }
+    .benefits_p {
+        padding: 0 26px 0 26px;
+    }
+    .comment_p {
+        width: 300px;
+        font-size: 18px;
+    }
+    .subscribe_p {
+        font-size: 14px;
+    }
+    .subscribe_form {
+        margin-top: 20px;
+    }
+    .email_input {
+        padding-left: 20px;
+        padding-right: 50px;
+    }
+    .footer_footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 10px;
+        gap: 40px;
+    }
 }
