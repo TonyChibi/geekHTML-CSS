@@ -269,8 +269,8 @@
     padding-left: calc(50% - 585px);
     padding-right: calc(50% - 585px);
     display: grid;
-    grid-template: 581px 581px/ repeat(3, 31.6%);
-    gap: 30px;
+    grid-template: 581px 581px/ repeat(3, 31.2%);
+    gap: 36px;
 }
 
 .fetured_item {
@@ -544,34 +544,41 @@
 }
 
 @media(max-width: 768px) {
+
     /* tablet styles */
     .center {
         padding-left: calc(50% - 376px);
         padding-right: calc(50% - 376px);
     }
+
     .header {
         max-width: 785px;
         justify-content: space-between;
     }
+
     .left_header,
     .right_header {
         padding: 6px 32px;
     }
+
     .brand_mark {
         grid-template: 36px 20px / 6px 1fr;
         gap: 5px;
         text-align: left;
     }
+
     .brand_h1 {
         padding: 0;
         line-height: 36px;
         font-size: 32px;
     }
+
     .brand_h2 {
         padding: 0;
         line-height: 20px;
         font-size: 18px;
     }
+
     .agitation_block {
         max-width: 768px;
         gap: 15px;
@@ -579,28 +586,35 @@
         margin-top: 32px;
         margin-bottom: 48px;
     }
+
     .fetured_block {
         max-width: 785px;
         margin: 48px 30px;
     }
+
     .items_block {
         grid-template: repeat(3, 520px)/ repeat(2, 1fr);
         gap: 15px;
     }
+
     .items_img {
         width: 100%;
     }
+
     .items_section {
         gap: 6px;
         margin: 12px 14px 10px 8px;
     }
+
     .benefits {
         flex-direction: column;
         align-items: center;
     }
+
     .benefits_section {
         width: 360px;
     }
+
     .subscribers {
         background-color: #F4F4F4;
         background-repeat: no-repeat;
@@ -610,6 +624,7 @@
         padding: 64px 105px;
         gap: 48px;
     }
+
     .footer_footer {
         justify-content: space-around;
     }
@@ -619,71 +634,89 @@
     .center {
         padding: 0;
     }
+
     .left_header,
     .right_header {
         padding: 6px 32px;
     }
+
     .profile_logo,
     .cart_logo {
         display: none;
     }
+
     .brand_block {
         display: flex;
         justify-content: center;
         height: 360px;
     }
+
     .brand_mark {
         gap: 10px;
     }
+
     .brand_img {
         width: 0;
     }
+
     .agitation_block {
         margin: 20px 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .fetured_block {
         margin: 30px 8px;
     }
+
     .agitation_item_1,
     .agitation_item_2,
     .agitation_item_3 {
         width: -webkit-fill-available;
         height: 60vw;
     }
+
     .agitation_item_lower {
         width: -webkit-fill-available;
         height: 64px;
     }
+
     .items_block {
         display: flex;
         flex-direction: column;
     }
+
     .items_img {
         width: -webkit-fill-available;
     }
+
     .benefits {
         padding: 48px 13px 80px;
     }
+
     .benefits_p {
         padding: 0 26px 0 26px;
     }
+
     .comment_p {
         width: 300px;
         font-size: 18px;
     }
+
     .subscribe_p {
         font-size: 14px;
     }
+
     .subscribe_form {
         margin-top: 20px;
     }
+
     .email_input {
         padding-left: 20px;
         padding-right: 50px;
     }
+
     .footer_footer {
         flex-direction: column-reverse;
         align-items: center;
