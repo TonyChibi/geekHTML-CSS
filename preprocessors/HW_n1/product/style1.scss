@@ -1,0 +1,15 @@
+@use "../sass/header.scss";
+@use "../sass/footer.scss";
+@use "../sass/mixins";
+@use "../sass/vars";
+
+// above uses
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    @include center;
+}

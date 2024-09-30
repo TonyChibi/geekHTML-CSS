@@ -1,0 +1,46 @@
+@import "vars";
+
+// above imports
+
+
+%lato_400 {
+    font-family: Lato;
+    font-weight: 400;
+    font-style: normal;
+}
+
+%lato_700 {
+    font-family: Lato;
+    font-weight: 700;
+    font-style: normal;
+}
+
+%lato_900 {
+    font-family: Lato;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+// above extensions
+
+
+@mixin center($width) {
+    padding-left: calc(50% - $width / 2);
+    padding-right: calc(50% - $width / 2);
+}
+
+@mixin header_site() {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding: 19px 180px 18px;
+}
+
+@mixin flex_center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

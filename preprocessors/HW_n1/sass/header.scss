@@ -1,0 +1,103 @@
+@import 'mixins', 'vars';
+
+.header {
+
+    @include center($large_width);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $dark_back_color;
+    background-size: cover;
+
+
+    &_left {
+        @include header_site;
+    }
+
+    &_right {
+        @include header_site;
+
+    }
+
+    &_button {
+        width: 26px;
+        height: 26.79px;
+        top: 28.21px;
+        left: 316px;
+        gap: 0px;
+        background: $dark_back_color;
+        border: none;
+    }
+
+    .menu_logo {
+
+
+        .drop_menu {
+            display: none;
+            position: absolute;
+            width: 320px;
+            padding: 33px 0 0 0;
+            top: 44px;
+            right: 0px;
+
+            &_inner {
+                display: flex;
+                flex-direction: column;
+                padding: 32px;
+                background-color: #fff;
+                gap: 20px;
+            }
+
+            &_h2 {
+                font-family: Lato;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 16.8px;
+                text-align: left;
+            }
+
+            .category {
+                @extend %lato_400;
+
+                font-size: 14px;
+
+                line-height: 16.8px;
+                text-align: left;
+                color: $pink_text_color;
+
+                &_list {
+                    list-style-type: none;
+                    text-align: start;
+                    padding-left: 20px;
+                }
+
+                &_item {
+                    @extend %lato_400;
+                    font-size: 14px;
+                    line-height: 16.8px;
+                    text-align: left;
+                    color: $drop_menu_grey_text;
+                }
+            }
+
+            .link {
+                text-decoration: none;
+                color: unset;
+            }
+        }
+
+        &:hover .drop_menu {
+
+            display: flex;
+            justify-content: flex-end;
+
+        }
+
+        &:focus .drop_menu {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+}

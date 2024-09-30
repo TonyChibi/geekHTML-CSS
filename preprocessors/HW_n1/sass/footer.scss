@@ -1,0 +1,155 @@
+@import 'mixins', 'vars';
+
+
+.footer {
+    @include center($large_width);
+    margin-top: 95px;
+
+    &_benefits {
+        padding: 103px 230px;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+        background: $dark_back_color;
+        gap: 30px;
+
+        &_section {
+            @include flex_center();
+            flex-flow: column wrap;
+            text-align: center;
+            gap: 16px;
+
+            &_h2 {
+                @extend %lato_400;
+                font-size: 19.96px;
+                line-height: 24px;
+                color: $benefits_text_color ;
+            }
+
+            &_p {
+                @extend %lato_400;
+                font-size: 13.972px;
+                line-height: 17px;
+                text-align: center;
+                color: $benefits_text_color;
+            }
+        }
+    }
+
+    &_subscribers {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        background-image: url(../images/footer_background.png);
+        background-size: cover;
+        @include center(920px);
+        padding-bottom: 96px;
+        padding-top: 96px;
+        gap: 223px;
+
+        &_costumers_comment {
+            max-width: 360px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+
+            &_img {
+                max-width: 96px;
+
+            }
+
+            &_p {
+                @extend %lato_400;
+                font-size: 20px;
+                line-height: 24px;
+                text-align: center;
+                color: $dark_back_color;
+            }
+        }
+
+        &_subscribe {
+            @extend %lato_700;
+            font-size: 24px;
+            line-height: 167.2%;
+            /* or 40px */
+            text-align: center;
+            color: $dark_back_color;
+
+            &_p {
+                @extend %lato_400;
+                width: max-content;
+                font-size: 18px;
+                line-height: 167.2%;
+                /* or 30px */
+                text-align: center;
+                columns: $dark_back_color;
+            }
+
+            &_form {
+                display: flex;
+
+                &_email_input {
+                    border-radius: 30px 0% 0% 30px;
+                    padding: 8px 64px 8px 22px;
+                    border: none;
+                    background: $subscribe_input_back_color;
+                    color: $dark_back_color;
+                }
+
+                &_input_button {
+                    border-radius: 0 30px 30px 0;
+                    padding: 8px;
+                    border: none;
+                    background: $pink_text_color;
+                    color: $white_text_color;
+                }
+            }
+
+        }
+    }
+
+    &_footer {
+        @include center($large_width);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 230px;
+        background: $dark_back_color;
+
+        &_manufacturer {
+            @extend %lato_400;
+            line-height: 19.2px;
+            text-align: left;
+            color: $benefits_text_color;
+        }
+
+        &_icons {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+
+            &_button {
+                border: none;
+                width: fit-content;
+                height: fit-content;
+
+                &_icon {
+                    background: $white_text_color;
+                    width: 32px;
+                    height: 16px;
+                    display: flex;
+                    justify-content: center;
+                    padding: 8px 0;
+
+                    &:hover {
+                        fill: #fff;
+                        background: #F16D7F;
+                    }
+                }
+            }
+        }
+    }
+
+}
