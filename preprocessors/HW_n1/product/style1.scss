@@ -1,7 +1,7 @@
 @use "../sass/header.scss";
 @use "../sass/footer.scss";
-@use "../sass/mixins";
-@use "../sass/vars";
+@use "../sass/mixins" as mxns;
+@use "../sass/vars" as vars;
 
 // above uses
 
@@ -11,5 +11,217 @@
 }
 
 main {
-    @include center;
+    @include mxns.center(vars.$large_width);
+
+    .new_arrivals {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 230px;
+        background: vars.$new_arrivals_back_color;
+
+
+        &_h1 {
+            @extend %lato_700;
+            color: vars.$pink_text_color;
+        }
+
+        &_breadcrumbs {
+            &_list {
+                @extend %lato_300;
+                display: flex;
+                gap: 15px;
+
+                &_item {
+                    list-style-type: none;
+
+                    &:not(:last-child)::after {
+                        content: "/";
+                        padding: 15px;
+                    }
+
+
+                    &:last-child a {
+                        @extend %lato_700;
+                        color: vars.$pink_text_color;
+                    }
+
+                    &_link {
+                        text-decoration: none;
+                        color: vars.$bread_crumbs_txt_color;
+
+                        &:hover {
+                            color: vars.$pink_text_color;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    .product_view {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_image {
+            width: -webkit-fill-available;
+        }
+
+        %arrow {
+            @include mxns.margin_center(vars.$large_width);
+            position: absolute;
+            z-index: 10000;
+            padding: 12px 18px;
+            background: vars.$product_arrow_back_color;
+
+        }
+
+        %arrow:hover {
+            fill: vars.$pink_text_color;
+        }
+
+        &_arrow_left {
+            @extend %arrow;
+
+            left: 0;
+        }
+
+        &_arrow_right {
+            @extend %arrow;
+            right: 0;
+        }
+    }
+
+    .product_section {
+        margin: 0 230px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: vars.$product_section_border;
+        position: relative;
+        top: -64px;
+        background: vars.$white_text_color;
+
+        &_description {
+            margin: 0 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-bottom: vars.$product_section_border;
+
+            &_collection {
+                @extend %lato_400;
+                padding-top: 64px;
+                color: vars.$pink_text_color;
+
+            }
+
+            &_stroke {
+                margin: 12px 0;
+                background-color: vars.$pink_text_color;
+                color: vars.$pink_text_color;
+                width: 64px;
+                height: 4px;
+            }
+
+            &_name {
+                @extend %lato_400;
+                color: vars.$product_name_color;
+
+            }
+
+            &_info {
+                @extend %lato_400;
+                padding: 48px 42px 0;
+                color: vars.$product_info_color;
+                text-align: center;
+            }
+
+            &_price {
+                @extend %lato_400;
+                padding-top: 32px;
+                padding-bottom: 64px;
+                color: vars.$pink_text_color;
+                size: 24px;
+            }
+        }
+
+        &_modifications {
+            padding-top: 64px;
+            display: flex;
+            gap: 22px;
+
+            label {
+                @extend %lato_400;
+                color: vars.$product_modifications_label_color;
+            }
+
+            select {
+                border: none;
+                @extend %lato_400;
+                color: vars.$product_modifications_label_color;
+
+                &:active option:first-child {
+                    display: none;
+                }
+            }
+        }
+
+        &_add_to_cart {
+            @extend %lato_400;
+            margin-top: 48px;
+            margin-bottom: 64px;
+            padding: 15px 56px 15px 24px;
+            @include mxns.flex_center();
+            gap: 22px;
+            color: vars.$pink_text_color;
+            background: none;
+            border: solid 1px vars.$pink_text_color;
+
+            svg {
+                fill: vars.$pink_text_color;
+
+            }
+        }
+    }
+
+    .related_product {
+        margin: 64px 230px;
+        @include mxns.flex_center();
+        gap: 30px;
+
+        &_item {
+            width: 360px;
+
+            background: vars.$item_back_color;
+
+            &_section {
+                padding-left: 16px;
+                padding-right: 28px;
+
+                &_name {
+                    @extend %lato_400;
+                    padding-top: 24px;
+                    color: vars.$product_name_color;
+                }
+
+                &_descr {
+                    @extend %lato_300;
+                    padding-top: 12px;
+                    color: vars.$related_products_description_color;
+                }
+
+                &_price {
+                    @extend %lato_400;
+                    padding-top: 18px;
+                    padding-bottom: 20px;
+                    color: vars.$pink_text_color;
+                }
+            }
+
+        }
+    }
+
 }
