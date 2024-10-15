@@ -1,0 +1,113 @@
+@import 'mixins', 'vars';
+
+.content-box {
+    overflow: hidden;
+
+    .header {
+        @include margin_center($large_width);
+        padding: 19px 230px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: $dark_back_color;
+        background-size: cover;
+        position: relative;
+
+
+
+
+        &_left {
+            @include header_site;
+        }
+
+        &_right {
+            @include header_site;
+
+
+        }
+
+        &_button {
+            cursor: pointer;
+            width: 26px;
+            height: 26.79px;
+            top: 28.21px;
+            left: 316px;
+            gap: 0px;
+            background: $dark_back_color;
+            border: none;
+        }
+
+        .menu_logo {
+
+
+            .drop_menu {
+                display: flex;
+                justify-content: flex-start;
+                position: absolute;
+                z-index: 999;
+                width: 232px;
+                top: 76px;
+                right: -232px;
+                background-color: #fff;
+                box-sizing: border-box;
+                box-shadow: $dropdown-box-shadow;
+                transition: right 1s cubic-bezier(0.33, 1, 0.68, 1);
+
+                &_inner {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 32px;
+                    gap: 20px;
+                }
+
+                &_h2 {
+                    font-family: Lato;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 16.8px;
+                    text-align: left;
+                }
+
+                .category {
+                    @extend %lato_400;
+
+                    font-size: 14px;
+
+                    line-height: 16.8px;
+                    text-align: left;
+                    color: $pink_text_color;
+
+                    &_list {
+                        list-style-type: none;
+                        text-align: start;
+                        padding-left: 20px;
+                    }
+
+                    &_item {
+                        @extend %lato_400;
+                        font-size: 14px;
+                        line-height: 16.8px;
+                        text-align: left;
+                        color: $drop_menu_grey_text;
+                    }
+                }
+
+                .link {
+                    text-decoration: none;
+                    color: unset;
+                }
+            }
+
+            #right-slide:checked~.drop_menu {
+                right: 0;
+                top: 76px;
+
+            }
+
+            .menu-checkbox {
+                visibility: hidden;
+            }
+        }
+
+    }
+}

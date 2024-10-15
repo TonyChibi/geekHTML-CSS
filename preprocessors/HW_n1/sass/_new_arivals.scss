@@ -1,0 +1,53 @@
+@use "../sass/mixins" as mxns;
+@use "../sass/vars" as vars;
+
+
+.new_arrivals {
+    @include mxns.margin_center(vars.$large_width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 230px;
+    background: vars.$new_arrivals_back_color;
+
+
+
+    &_h1 {
+        @extend %lato_700;
+        color: vars.$pink_text_color;
+    }
+
+    &_breadcrumbs {
+        &_list {
+            @extend %lato_300;
+            display: flex;
+            gap: 15px;
+
+            &_item {
+                list-style-type: none;
+
+                &:not(:last-child)::after {
+                    content: "/";
+                    padding: 15px;
+                }
+
+
+                &:last-child a {
+                    @extend %lato_700;
+                    color: vars.$pink_text_color;
+                }
+
+                &_link {
+                    text-decoration: none;
+                    color: vars.$bread_crumbs_txt_color;
+
+                    &:hover {
+                        color: vars.$pink_text_color;
+                    }
+                }
+            }
+        }
+
+
+    }
+}

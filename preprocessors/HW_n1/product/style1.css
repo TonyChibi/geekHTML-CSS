@@ -4,7 +4,7 @@ main .new_arrivals_breadcrumbs_list, main .related_product_item_section_descr {
   font-style: normal;
 }
 
-main .product_section_description_collection, main .product_section_description_name, main .product_section_description_info, main .product_section_description_price, main .product_section_modifications label, main .product_section_modifications select, main .product_section_add_to_cart, main .related_product_item_section_name, main .related_product_item_section_price, .header .menu_logo .drop_menu .category_item, .header .menu_logo .drop_menu .category {
+main .product_section_description_collection, main .product_section_description_name, main .product_section_description_info, main .product_section_description_price, main .product_section_modifications label, main .product_section_modifications select, main .product_section_add_to_cart, main .related_product_item_section_name, main .related_product_item_section_price, .content-box .header .menu_logo .drop_menu .category_item, .content-box .header .menu_logo .drop_menu .category {
   font-family: Lato;
   font-weight: 400;
   font-style: normal;
@@ -16,30 +16,34 @@ main .new_arrivals_h1, main .new_arrivals_breadcrumbs_list_item:last-child a {
   font-style: normal;
 }
 
-.header {
-  padding-left: calc(50% - 800px);
-  padding-right: calc(50% - 800px);
+.content-box {
+  overflow: hidden;
+}
+.content-box .header {
+  margin-left: calc(50% - 800px);
+  margin-right: calc(50% - 800px);
+  padding: 19px 230px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #222224;
   background-size: cover;
+  position: relative;
 }
-.header_left {
+.content-box .header_left {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
-  padding: 19px 180px 18px;
 }
-.header_right {
+.content-box .header_right {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 30px;
-  padding: 19px 180px 18px;
 }
-.header_button {
+.content-box .header_button {
+  cursor: pointer;
   width: 26px;
   height: 26.79px;
   top: 28.21px;
@@ -48,56 +52,59 @@ main .new_arrivals_h1, main .new_arrivals_breadcrumbs_list_item:last-child a {
   background: #222224;
   border: none;
 }
-.header .menu_logo .drop_menu {
-  display: none;
+.content-box .header .menu_logo .drop_menu {
+  display: flex;
+  justify-content: flex-start;
   position: absolute;
-  width: 320px;
-  padding: 33px 0 0 0;
-  top: 44px;
-  right: 0px;
+  z-index: 999;
+  width: 232px;
+  top: 76px;
+  right: -232px;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.2117647059);
+  transition: right 1s cubic-bezier(0.33, 1, 0.68, 1);
 }
-.header .menu_logo .drop_menu_inner {
+.content-box .header .menu_logo .drop_menu_inner {
   display: flex;
   flex-direction: column;
   padding: 32px;
-  background-color: #fff;
   gap: 20px;
 }
-.header .menu_logo .drop_menu_h2 {
+.content-box .header .menu_logo .drop_menu_h2 {
   font-family: Lato;
   font-size: 14px;
   font-weight: 700;
   line-height: 16.8px;
   text-align: left;
 }
-.header .menu_logo .drop_menu .category {
+.content-box .header .menu_logo .drop_menu .category {
   font-size: 14px;
   line-height: 16.8px;
   text-align: left;
   color: #F16D7F;
 }
-.header .menu_logo .drop_menu .category_list {
+.content-box .header .menu_logo .drop_menu .category_list {
   list-style-type: none;
   text-align: start;
   padding-left: 20px;
 }
-.header .menu_logo .drop_menu .category_item {
+.content-box .header .menu_logo .drop_menu .category_item {
   font-size: 14px;
   line-height: 16.8px;
   text-align: left;
   color: #6F6E6E;
 }
-.header .menu_logo .drop_menu .link {
+.content-box .header .menu_logo .drop_menu .link {
   text-decoration: none;
   color: unset;
 }
-.header .menu_logo:hover .drop_menu {
-  display: flex;
-  justify-content: flex-end;
+.content-box .header .menu_logo #right-slide:checked ~ .drop_menu {
+  right: 0;
+  top: 76px;
 }
-.header .menu_logo:focus .drop_menu {
-  display: flex;
-  justify-content: flex-end;
+.content-box .header .menu_logo .menu-checkbox {
+  visibility: hidden;
 }
 
 main .new_arrivals_breadcrumbs_list, main .related_product_item_section_descr {
