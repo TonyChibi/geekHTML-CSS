@@ -59,7 +59,7 @@ main .new_arrivals_h1, main .new_arrivals_breadcrumbs_list_item:last-child a {
   z-index: 999;
   width: 232px;
   top: 76px;
-  right: -232px;
+  right: -2232px;
   background-color: #fff;
   box-sizing: border-box;
   box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.2117647059);

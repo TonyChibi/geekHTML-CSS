@@ -266,14 +266,14 @@
                         @extend %lato_400;
                         font-size: 13px;
                         line-height: 16px;
-                        color: vars.$product_item_h2_color;
+                        color: vars.$product-card_name_color;
                     }
 
                     &_p {
                         @extend %lato_400;
                         font-size: 14px;
                         line-height: 17px;
-                        color: vars.$product_item_p_color;
+                        color: vars.$product-card_description_color;
                     }
 
                     &_price {
