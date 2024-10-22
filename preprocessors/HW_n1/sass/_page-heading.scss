@@ -2,18 +2,17 @@
 @use "../sass/vars" as vars;
 
 
-.new_arrivals {
-    @include mxns.margin_center(vars.$large_width);
+.page-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 60px 230px;
-    background: vars.$new_arrivals_back_color;
+    background: vars.$page-heading_back_color;
 
 
 
     &_h1 {
-        @extend %lato_700;
+        @extend %lato_400;
         color: vars.$pink_text_color;
     }
 

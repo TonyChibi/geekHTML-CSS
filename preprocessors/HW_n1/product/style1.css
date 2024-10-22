@@ -249,19 +249,19 @@ main .product_section_description_collection, main .product_section_description_
   background: #F16D7F;
 }
 
-main .related_product_item_section_descr, .new_arrivals_breadcrumbs_list {
+main .related_product_item_section_descr, .page-heading_breadcrumbs_list {
   font-family: Lato;
   font-weight: 300;
   font-style: normal;
 }
 
-main .product_section_description_collection, main .product_section_description_name, main .product_section_description_info, main .product_section_description_price, main .product_section_modifications label, main .product_section_modifications select, main .product_section_add_to_cart, main .related_product_item_section_name, main .related_product_item_section_price {
+main .product_section_description_collection, main .product_section_description_name, main .product_section_description_info, main .product_section_description_price, main .product_section_modifications label, main .product_section_modifications select, main .product_section_add_to_cart, main .related_product_item_section_name, main .related_product_item_section_price, .page-heading_h1 {
   font-family: Lato;
   font-weight: 400;
   font-style: normal;
 }
 
-.new_arrivals_h1, .new_arrivals_breadcrumbs_list_item:last-child a {
+.page-heading_breadcrumbs_list_item:last-child a {
   font-family: Lato;
   font-weight: 700;
   font-style: normal;
@@ -272,40 +272,38 @@ main .product_section_description_collection, main .product_section_description_
   margin-right: calc(50% - 800px);
 }
 
-.new_arrivals {
-  margin-left: calc(50% - 800px);
-  margin-right: calc(50% - 800px);
+.page-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 60px 230px;
   background: #F8F3F4;
 }
-.new_arrivals_h1 {
+.page-heading_h1 {
   color: #F16D7F;
 }
-.new_arrivals_breadcrumbs {
+.page-heading_breadcrumbs {
   cursor: default;
 }
-.new_arrivals_breadcrumbs_list {
+.page-heading_breadcrumbs_list {
   display: flex;
   gap: 15px;
 }
-.new_arrivals_breadcrumbs_list_item {
+.page-heading_breadcrumbs_list_item {
   list-style-type: none;
 }
-.new_arrivals_breadcrumbs_list_item:not(:last-child)::after {
+.page-heading_breadcrumbs_list_item:not(:last-child)::after {
   content: "/";
   padding: 15px;
 }
-.new_arrivals_breadcrumbs_list_item:last-child a {
+.page-heading_breadcrumbs_list_item:last-child a {
   color: #F16D7F;
 }
-.new_arrivals_breadcrumbs_list_item_link {
+.page-heading_breadcrumbs_list_item_link {
   text-decoration: none;
   color: #636363;
 }
-.new_arrivals_breadcrumbs_list_item_link:hover {
+.page-heading_breadcrumbs_list_item_link:hover {
   color: #F16D7F;
 }
 

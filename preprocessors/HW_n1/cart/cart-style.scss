@@ -1,6 +1,6 @@
 @use "../sass/footer.scss";
 @use "../sass/header.scss";
-@use "../sass/new_arivals.scss";
+@use "../sass/page-heading";
 @use "../sass/mixins" as mxns;
 @use "../sass/vars" as vars;
 @use "../sass/product-card";
@@ -10,4 +10,187 @@
 * {
     margin: 0;
     padding: 0;
+}
+
+.cart-content {
+    padding: 96px 230px 72px;
+    user-select: none;
+    display: flex;
+    gap: 128px;
+
+
+    .products {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+
+        .cart-product {
+            width: 652px;
+            display: flex;
+
+            box-sizing: border-box;
+            box-shadow: vars.$cart-product-box-shadow;
+
+
+            &__image {
+                width: 262px;
+                box-sizing: border-box;
+            }
+
+            &__info {
+                padding: 22px 150px 62px 32px;
+                display: flex;
+                flex-flow: wrap column;
+                gap: 6px;
+                position: relative;
+                color: vars.$cart-product-text-color;
+                @extend %lato_400;
+
+
+                .crest-button {
+                    position: absolute;
+                    top: 28px;
+                    right: 57px;
+                    box-sizing: border-box;
+                    border: none;
+                    background: none;
+                    cursor: pointer;
+                }
+
+            }
+
+            &__name {
+                text-align: start;
+                @extend %lato_400;
+                padding-bottom: 36px;
+                color: vars.$cart-product-name-color;
+            }
+
+            &__price {
+                .value {
+                    color: vars.$pink_text_color;
+                }
+            }
+
+            &__quantity {
+                display: flex;
+                flex-direction: row;
+                gap: 24px;
+
+                .value {
+                    width: 44px;
+                    border: solid 1px vars.$cart-product-input-border-color;
+                    text-align: center;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .cart-form {
+        width: 360px;
+
+        .shipping-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-top: 16px;
+
+
+            &__lable {
+                @extend %lato_400;
+                color: vars.$shipping-form-text-color;
+
+            }
+
+            &__input {
+                @extend %lato_400;
+                padding: 16px 1.6rem;
+                outline: none;
+                color: vars.$shipping-form-text-color;
+                border: solid 1px vars.$shipping-form-color;
+
+
+
+                &:not(.pale)::placeholder {
+                    color: vars.$shipping-form-text-color;
+
+
+                }
+
+                .pale {
+                    &::placeholder {
+                        colors: vars.$shipping-form-address-placeholder-color;
+                    }
+                }
+
+
+            }
+
+            &__submit {
+                @extend %lato_400;
+                padding: 12px 1.4rem;
+                color: vars.$shipping-form-color;
+                width: 10rem;
+                background: none;
+                border: 1px solid vars.$shipping-form-color;
+
+            }
+        }
+
+        .proceed-box {
+            margin-top: 57px;
+            padding: 40px 44px 42px;
+            background: vars.$cart__proceed-box-back-color;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 18px;
+
+            &__prices {
+                @extend %lato_400;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                box-sizing: border-box;
+                width: -webkit-fill-available;
+                gap: 12px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid vars.$cart__proceed-box__prices-botom-border-color ;
+
+                .sub-price {
+                    font-size: 11px;
+                    display: flex;
+                    gap: 2rem;
+                }
+
+                .grand-price {
+                    font-size: 16px;
+                    display: flex;
+                    gap: 2rem;
+
+                    .value {
+                        color: vars.$pink_text_color;
+                    }
+                }
+            }
+
+            &__button {
+                @extend %lato_400;
+                border: none;
+                color: vars.$white_text_color;
+                background: vars.$pink_text_color;
+                padding: 16px 42px;
+
+            }
+
+
+        }
+    }
+
 }

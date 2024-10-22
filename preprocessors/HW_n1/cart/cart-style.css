@@ -1,4 +1,4 @@
-.footer_footer_manufacturer, .footer_subscribers_subscribe_p, .footer_subscribers_costumers_comment_p, .footer_benefits_section_p, .footer_benefits_section_h2 {
+.cart-content .products .cart-product__info, .cart-content .products .cart-product__name, .cart-content .cart-form .shipping-form__lable, .cart-content .cart-form .shipping-form__input, .cart-content .cart-form .shipping-form__submit, .cart-content .cart-form .proceed-box__prices, .cart-content .cart-form .proceed-box__button, .footer_footer_manufacturer, .footer_subscribers_subscribe_p, .footer_subscribers_costumers_comment_p, .footer_benefits_section_p, .footer_benefits_section_h2 {
   font-family: Lato;
   font-weight: 400;
   font-style: normal;
@@ -142,7 +142,7 @@
   background: #F16D7F;
 }
 
-.content-box .header .menu_logo .drop_menu .category_item, .content-box .header .menu_logo .drop_menu .category {
+.cart-content .products .cart-product__info, .cart-content .products .cart-product__name, .cart-content .cart-form .shipping-form__lable, .cart-content .cart-form .shipping-form__input, .cart-content .cart-form .shipping-form__submit, .cart-content .cart-form .proceed-box__prices, .cart-content .cart-form .proceed-box__button, .content-box .header .menu_logo .drop_menu .category_item, .content-box .header .menu_logo .drop_menu .category {
   font-family: Lato;
   font-weight: 400;
   font-style: normal;
@@ -237,58 +237,56 @@
   visibility: hidden;
 }
 
-.new_arrivals_breadcrumbs_list {
+.page-heading_breadcrumbs_list {
   font-family: Lato;
   font-weight: 300;
   font-style: normal;
 }
 
-.product-card__name, .product-card__description, .product-card__price {
+.cart-content .products .cart-product__info, .cart-content .products .cart-product__name, .cart-content .cart-form .shipping-form__lable, .cart-content .cart-form .shipping-form__input, .cart-content .cart-form .shipping-form__submit, .cart-content .cart-form .proceed-box__prices, .cart-content .cart-form .proceed-box__button, .product-card__name, .product-card__description, .product-card__price, .page-heading_h1 {
   font-family: Lato;
   font-weight: 400;
   font-style: normal;
 }
 
-.new_arrivals_h1, .new_arrivals_breadcrumbs_list_item:last-child a {
+.page-heading_breadcrumbs_list_item:last-child a {
   font-family: Lato;
   font-weight: 700;
   font-style: normal;
 }
 
-.new_arrivals {
-  margin-left: calc(50% - 800px);
-  margin-right: calc(50% - 800px);
+.page-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 60px 230px;
   background: #F8F3F4;
 }
-.new_arrivals_h1 {
+.page-heading_h1 {
   color: #F16D7F;
 }
-.new_arrivals_breadcrumbs {
+.page-heading_breadcrumbs {
   cursor: default;
 }
-.new_arrivals_breadcrumbs_list {
+.page-heading_breadcrumbs_list {
   display: flex;
   gap: 15px;
 }
-.new_arrivals_breadcrumbs_list_item {
+.page-heading_breadcrumbs_list_item {
   list-style-type: none;
 }
-.new_arrivals_breadcrumbs_list_item:not(:last-child)::after {
+.page-heading_breadcrumbs_list_item:not(:last-child)::after {
   content: "/";
   padding: 15px;
 }
-.new_arrivals_breadcrumbs_list_item:last-child a {
+.page-heading_breadcrumbs_list_item:last-child a {
   color: #F16D7F;
 }
-.new_arrivals_breadcrumbs_list_item_link {
+.page-heading_breadcrumbs_list_item_link {
   text-decoration: none;
   color: #636363;
 }
-.new_arrivals_breadcrumbs_list_item_link:hover {
+.page-heading_breadcrumbs_list_item_link:hover {
   color: #F16D7F;
 }
 
@@ -362,4 +360,141 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+.cart-content {
+  padding: 96px 230px 72px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: flex;
+  gap: 128px;
+}
+.cart-content .products {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.cart-content .products .cart-product {
+  width: 652px;
+  display: flex;
+  box-sizing: border-box;
+  box-shadow: 17px 19px 24px 0px rgba(0, 0, 0, 0.1294117647);
+}
+.cart-content .products .cart-product__image {
+  width: 262px;
+  box-sizing: border-box;
+}
+.cart-content .products .cart-product__info {
+  padding: 22px 150px 62px 32px;
+  display: flex;
+  flex-flow: wrap column;
+  gap: 6px;
+  position: relative;
+  color: #575757;
+}
+.cart-content .products .cart-product__info .crest-button {
+  position: absolute;
+  top: 28px;
+  right: 57px;
+  box-sizing: border-box;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.cart-content .products .cart-product__name {
+  text-align: start;
+  padding-bottom: 36px;
+  color: #222222;
+}
+.cart-content .products .cart-product__price .value {
+  color: #F16D7F;
+}
+.cart-content .products .cart-product__quantity {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.cart-content .products .cart-product__quantity .value {
+  width: 44px;
+  border: solid 1px #EAEAEA;
+  text-align: center;
+}
+.cart-content .products .cart-product__quantity .value:focus {
+  outline: none;
+}
+.cart-content .cart-form {
+  width: 360px;
+}
+.cart-content .cart-form .shipping-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 16px;
+}
+.cart-content .cart-form .shipping-form__lable {
+  color: #222222;
+}
+.cart-content .cart-form .shipping-form__input {
+  padding: 16px 1.6rem;
+  outline: none;
+  color: #222222;
+  border: solid 1px #A4A4A4;
+}
+.cart-content .cart-form .shipping-form__input:not(.pale)::-moz-placeholder {
+  color: #222222;
+}
+.cart-content .cart-form .shipping-form__input:not(.pale)::placeholder {
+  color: #222222;
+}
+.cart-content .cart-form .shipping-form__input .pale::-moz-placeholder {
+  colors: #B1B1B1;
+}
+.cart-content .cart-form .shipping-form__input .pale::placeholder {
+  colors: #B1B1B1;
+}
+.cart-content .cart-form .shipping-form__submit {
+  padding: 12px 1.4rem;
+  color: #A4A4A4;
+  width: 10rem;
+  background: none;
+  border: 1px solid #A4A4A4;
+}
+.cart-content .cart-form .proceed-box {
+  margin-top: 57px;
+  padding: 40px 44px 42px;
+  background: #F5F3F3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+.cart-content .cart-form .proceed-box__prices {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  box-sizing: border-box;
+  width: -webkit-fill-available;
+  gap: 12px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E2E2E2;
+}
+.cart-content .cart-form .proceed-box__prices .sub-price {
+  font-size: 11px;
+  display: flex;
+  gap: 2rem;
+}
+.cart-content .cart-form .proceed-box__prices .grand-price {
+  font-size: 16px;
+  display: flex;
+  gap: 2rem;
+}
+.cart-content .cart-form .proceed-box__prices .grand-price .value {
+  color: #F16D7F;
+}
+.cart-content .cart-form .proceed-box__button {
+  border: none;
+  color: #fff;
+  background: #F16D7F;
+  padding: 16px 42px;
 }/*# sourceMappingURL=cart-style.css.map */
