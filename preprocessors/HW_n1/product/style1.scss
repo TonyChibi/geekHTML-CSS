@@ -2,7 +2,8 @@
 @use "../sass/footer.scss";
 @use "../sass/mixins" as mxns;
 @use "../sass/vars" as vars;
-
+@use "../sass/center";
+@use "../sass/new_arivals";
 // above uses
 
 * {
@@ -11,66 +12,67 @@
 }
 
 main {
-    @include mxns.center(vars.$large_width);
+    // @include mxns.center(vars.$large_width);
 
-    .new_arrivals {
-        display: flex;
-        justify-content: space-between;
-        padding: 60px 230px;
-        background: vars.$new_arrivals_back_color;
-
-
-        &_h1 {
-            @extend %lato_700;
-            color: vars.$pink_text_color;
-        }
-
-        &_breadcrumbs {
-            &_list {
-                @extend %lato_300;
-                display: flex;
-                gap: 15px;
-
-                &_item {
-                    list-style-type: none;
-
-                    &:not(:last-child)::after {
-                        content: "/";
-                        padding: 15px;
-                    }
+    // .new_arrivals {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     padding: 60px 230px;
+    //     background: vars.$new_arrivals_back_color;
 
 
-                    &:last-child a {
-                        @extend %lato_700;
-                        color: vars.$pink_text_color;
-                    }
+    //     &_h1 {
+    //         @extend %lato_700;
+    //         color: vars.$pink_text_color;
+    //     }
 
-                    &_link {
-                        text-decoration: none;
-                        color: vars.$bread_crumbs_txt_color;
+    //     &_breadcrumbs {
+    //         &_list {
+    //             @extend %lato_300;
+    //             display: flex;
+    //             gap: 15px;
 
-                        &:hover {
-                            color: vars.$pink_text_color;
-                        }
-                    }
-                }
-            }
+    //             &_item {
+    //                 list-style-type: none;
+
+    //                 &:not(:last-child)::after {
+    //                     content: "/";
+    //                     padding: 15px;
+    //                 }
 
 
-        }
-    }
+    //                 &:last-child a {
+    //                     @extend %lato_700;
+    //                     color: vars.$pink_text_color;
+    //                 }
+
+    //                 &_link {
+    //                     text-decoration: none;
+    //                     color: vars.$bread_crumbs_txt_color;
+
+    //                     &:hover {
+    //                         color: vars.$pink_text_color;
+    //                     }
+    //                 }
+    //             }
+    //         }
+
+
+    //     }
+    // }
 
     .product_view {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
 
         &_image {
             width: -webkit-fill-available;
         }
 
         %arrow {
-            @include mxns.margin_center(vars.$large_width);
+            user-select: none;
             position: absolute;
             z-index: 10000;
             padding: 12px 18px;

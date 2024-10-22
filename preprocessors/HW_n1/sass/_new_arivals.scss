@@ -18,6 +18,8 @@
     }
 
     &_breadcrumbs {
+        cursor: default;
+
         &_list {
             @extend %lato_300;
             display: flex;

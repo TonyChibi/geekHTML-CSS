@@ -1,0 +1,13 @@
+@use "../sass/footer.scss";
+@use "../sass/header.scss";
+@use "../sass/new_arivals.scss";
+@use "../sass/mixins" as mxns;
+@use "../sass/vars" as vars;
+@use "../sass/product-card";
+@use "../sass/pawn-cursor";
+@use "../sass/center";
+
+* {
+    margin: 0;
+    padding: 0;
+}

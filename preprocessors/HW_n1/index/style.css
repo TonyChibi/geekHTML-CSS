@@ -20,8 +20,6 @@
   overflow: hidden;
 }
 .content-box .header {
-  margin-left: calc(50% - 800px);
-  margin-right: calc(50% - 800px);
   padding: 19px 230px;
   display: flex;
   justify-content: space-between;
@@ -59,11 +57,11 @@
   z-index: 999;
   width: 232px;
   top: 76px;
-  right: -2232px;
+  right: -232px;
   background-color: #fff;
   box-sizing: border-box;
   box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.2117647059);
-  transition: right 1s cubic-bezier(0.33, 1, 0.68, 1);
+  transition: right 0.2s cubic-bezier(0.33, 0.6, 0.68, 0.6);
 }
 .content-box .header .menu_logo .drop_menu_inner {
   display: flex;
@@ -126,8 +124,6 @@
 }
 
 .footer {
-  padding-left: calc(50% - 800px);
-  padding-right: calc(50% - 800px);
   margin-top: 95px;
 }
 .footer_benefits {
@@ -277,6 +273,11 @@
   font-style: normal;
 }
 
+.center {
+  margin-left: calc(50% - 800px);
+  margin-right: calc(50% - 800px);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -300,10 +301,6 @@
   font-style: normal;
 }
 
-.main {
-  padding-left: calc(50% - 800px);
-  padding-right: calc(50% - 800px);
-}
 .main .brand {
   padding-left: calc(50% - 800px);
   padding-right: calc(50% - 800px);

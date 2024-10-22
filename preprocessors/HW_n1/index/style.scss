@@ -2,7 +2,7 @@
 @use "../sass/footer.scss";
 @use "../sass/vars" as vars;
 @use "../sass/mixins" as mxns;
-
+@use "../sass/center";
 // above uses
 
 
@@ -66,7 +66,7 @@
 
 
 .main {
-    @include center(vars.$large_width);
+    // @include center(vars.$large_width);
 
     .brand {
         @include center(vars.$large_width);

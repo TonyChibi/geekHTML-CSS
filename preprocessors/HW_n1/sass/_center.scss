@@ -1,0 +1,6 @@
+@use "mixins.scss" as mxns;
+@use "vars.scss" as vars;
+
+.center {
+    @include mxns.margin_center(vars.$large_width);
+}

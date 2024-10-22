@@ -1,4 +1,4 @@
-main .new_arrivals_breadcrumbs_list, main .related_product_item_section_descr {
+main .related_product_item_section_descr {
   font-family: Lato;
   font-weight: 300;
   font-style: normal;
@@ -10,18 +10,10 @@ main .product_section_description_collection, main .product_section_description_
   font-style: normal;
 }
 
-main .new_arrivals_h1, main .new_arrivals_breadcrumbs_list_item:last-child a {
-  font-family: Lato;
-  font-weight: 700;
-  font-style: normal;
-}
-
 .content-box {
   overflow: hidden;
 }
 .content-box .header {
-  margin-left: calc(50% - 800px);
-  margin-right: calc(50% - 800px);
   padding: 19px 230px;
   display: flex;
   justify-content: space-between;
@@ -59,11 +51,11 @@ main .new_arrivals_h1, main .new_arrivals_breadcrumbs_list_item:last-child a {
   z-index: 999;
   width: 232px;
   top: 76px;
-  right: -2232px;
+  right: -232px;
   background-color: #fff;
   box-sizing: border-box;
   box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.2117647059);
-  transition: right 1s cubic-bezier(0.33, 1, 0.68, 1);
+  transition: right 0.2s cubic-bezier(0.33, 0.6, 0.68, 0.6);
 }
 .content-box .header .menu_logo .drop_menu_inner {
   display: flex;
@@ -107,7 +99,7 @@ main .new_arrivals_h1, main .new_arrivals_breadcrumbs_list_item:last-child a {
   visibility: hidden;
 }
 
-main .new_arrivals_breadcrumbs_list, main .related_product_item_section_descr {
+main .related_product_item_section_descr {
   font-family: Lato;
   font-weight: 300;
   font-style: normal;
@@ -119,15 +111,13 @@ main .product_section_description_collection, main .product_section_description_
   font-style: normal;
 }
 
-main .new_arrivals_h1, main .new_arrivals_breadcrumbs_list_item:last-child a, .footer_subscribers_subscribe {
+.footer_subscribers_subscribe {
   font-family: Lato;
   font-weight: 700;
   font-style: normal;
 }
 
 .footer {
-  padding-left: calc(50% - 800px);
-  padding-right: calc(50% - 800px);
   margin-top: 95px;
 }
 .footer_benefits {
@@ -259,7 +249,7 @@ main .new_arrivals_h1, main .new_arrivals_breadcrumbs_list_item:last-child a, .f
   background: #F16D7F;
 }
 
-main .new_arrivals_breadcrumbs_list, main .related_product_item_section_descr {
+main .related_product_item_section_descr, .new_arrivals_breadcrumbs_list {
   font-family: Lato;
   font-weight: 300;
   font-style: normal;
@@ -271,10 +261,52 @@ main .product_section_description_collection, main .product_section_description_
   font-style: normal;
 }
 
-main .new_arrivals_h1, main .new_arrivals_breadcrumbs_list_item:last-child a {
+.new_arrivals_h1, .new_arrivals_breadcrumbs_list_item:last-child a {
   font-family: Lato;
   font-weight: 700;
   font-style: normal;
+}
+
+.center {
+  margin-left: calc(50% - 800px);
+  margin-right: calc(50% - 800px);
+}
+
+.new_arrivals {
+  margin-left: calc(50% - 800px);
+  margin-right: calc(50% - 800px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 230px;
+  background: #F8F3F4;
+}
+.new_arrivals_h1 {
+  color: #F16D7F;
+}
+.new_arrivals_breadcrumbs {
+  cursor: default;
+}
+.new_arrivals_breadcrumbs_list {
+  display: flex;
+  gap: 15px;
+}
+.new_arrivals_breadcrumbs_list_item {
+  list-style-type: none;
+}
+.new_arrivals_breadcrumbs_list_item:not(:last-child)::after {
+  content: "/";
+  padding: 15px;
+}
+.new_arrivals_breadcrumbs_list_item:last-child a {
+  color: #F16D7F;
+}
+.new_arrivals_breadcrumbs_list_item_link {
+  text-decoration: none;
+  color: #636363;
+}
+.new_arrivals_breadcrumbs_list_item_link:hover {
+  color: #F16D7F;
 }
 
 * {
@@ -282,51 +314,19 @@ main .new_arrivals_h1, main .new_arrivals_breadcrumbs_list_item:last-child a {
   padding: 0;
 }
 
-main {
-  padding-left: calc(50% - 800px);
-  padding-right: calc(50% - 800px);
-}
-main .new_arrivals {
-  display: flex;
-  justify-content: space-between;
-  padding: 60px 230px;
-  background: #F8F3F4;
-}
-main .new_arrivals_h1 {
-  color: #F16D7F;
-}
-main .new_arrivals_breadcrumbs_list {
-  display: flex;
-  gap: 15px;
-}
-main .new_arrivals_breadcrumbs_list_item {
-  list-style-type: none;
-}
-main .new_arrivals_breadcrumbs_list_item:not(:last-child)::after {
-  content: "/";
-  padding: 15px;
-}
-main .new_arrivals_breadcrumbs_list_item:last-child a {
-  color: #F16D7F;
-}
-main .new_arrivals_breadcrumbs_list_item_link {
-  text-decoration: none;
-  color: #636363;
-}
-main .new_arrivals_breadcrumbs_list_item_link:hover {
-  color: #F16D7F;
-}
 main .product_view {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 main .product_view_image {
   width: -webkit-fill-available;
 }
 main .product_view .product_view_arrow_right, main .product_view .product_view_arrow_left {
-  margin-left: calc(50% - 800px);
-  margin-right: calc(50% - 800px);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   position: absolute;
   z-index: 10000;
   padding: 12px 18px;
