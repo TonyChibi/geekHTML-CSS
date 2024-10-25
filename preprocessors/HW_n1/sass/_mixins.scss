@@ -63,3 +63,51 @@
     align-items: center;
     justify-content: center;
 }
+
+
+
+// beyond hover mixins
+
+@mixin pale-button_hover {
+    color: $pink_text_color;
+    border: 1px solid $pink_text_color;
+
+
+
+}
+
+@mixin input_hover {
+
+    border-color: $pink_text_color ;
+
+
+
+}
+
+@mixin pink-button_hover {
+    text-shadow: 0 0 1em $white_text_color;
+    border-radius: 1em;
+
+    outline: 3px solid $pink_text_color;
+}
+
+
+
+// beyond focus mixins
+
+@mixin input_focus {
+
+    border-color: $pink_text_color ;
+
+
+
+}
+
+
+
+// beyond active mixins
+
+@mixin pink-buton_active {
+    outline: none;
+
+}

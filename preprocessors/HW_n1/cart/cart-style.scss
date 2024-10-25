@@ -12,8 +12,16 @@
     padding: 0;
 }
 
+
+
+
+
+
+
+
+
 .cart-content {
-    padding: 96px 230px 72px;
+    padding: 96px 230px 128px;
     user-select: none;
     display: flex;
     gap: 128px;
@@ -90,6 +98,28 @@
             }
         }
 
+        &__buttons-box {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 72px;
+        }
+
+        &__button {
+            padding: 16px 40px;
+            box-sizing: border-box;
+            border: 1px solid vars.$cart__products__button-border-color;
+            color: vars.$cart__products__button-color;
+            background: none;
+            @extend %lato_400;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+
+            &:hover {
+                @include mxns.pale-button_hover;
+            }
+        }
+
     }
 
     .cart-form {
@@ -112,9 +142,18 @@
                 @extend %lato_400;
                 padding: 16px 1.6rem;
                 outline: none;
+                box-sizing: border-box;
                 color: vars.$shipping-form-text-color;
                 border: solid 1px vars.$shipping-form-color;
+                transition: all 0.3s;
 
+                &:hover {
+                    @include mxns.input_hover;
+                }
+
+                &:focus {
+                    @include mxns.input_focus;
+                }
 
 
                 &:not(.pale)::placeholder {
@@ -125,7 +164,7 @@
 
                 .pale {
                     &::placeholder {
-                        colors: vars.$shipping-form-address-placeholder-color;
+                        color: vars.$shipping-form-address-placeholder-color;
                     }
                 }
 
@@ -139,7 +178,12 @@
                 width: 10rem;
                 background: none;
                 border: 1px solid vars.$shipping-form-color;
+                cursor: pointer;
+                transition: all 0.3s;
 
+                &:hover {
+                    @include mxns.pale-button_hover;
+                }
             }
         }
 
@@ -186,7 +230,16 @@
                 color: vars.$white_text_color;
                 background: vars.$pink_text_color;
                 padding: 16px 42px;
+                cursor: pointer;
+                transition: all 0.4s;
 
+                &:hover {
+                    @include mxns.pink-button_hover;
+                }
+
+                &:active {
+                    @include mxns.pink-buton_active;
+                }
             }
 
 
