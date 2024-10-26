@@ -91,6 +91,10 @@
     outline: 3px solid $pink_text_color;
 }
 
+@mixin link_hover {
+    color: $pink_text_color;
+}
+
 
 
 // beyond focus mixins

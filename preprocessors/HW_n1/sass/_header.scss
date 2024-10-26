@@ -96,6 +96,11 @@
                 .link {
                     text-decoration: none;
                     color: unset;
+
+                    &:hover {
+                        @include link_hover;
+                        transition: all 0.15s;
+                    }
                 }
             }
 

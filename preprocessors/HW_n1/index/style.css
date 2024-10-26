@@ -97,6 +97,10 @@
   text-decoration: none;
   color: unset;
 }
+.content-box .header .menu_logo .drop_menu .link:hover {
+  color: #F16D7F;
+  transition: all 0.15s;
+}
 .content-box .header .menu_logo #right-slide:checked ~ .drop_menu {
   right: 0;
   top: 76px;
