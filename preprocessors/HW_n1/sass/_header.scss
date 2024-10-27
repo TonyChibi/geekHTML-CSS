@@ -51,7 +51,7 @@
                 background-color: #fff;
                 box-sizing: border-box;
                 box-shadow: $dropdown-box-shadow;
-                // opacity: 0;
+                opacity: 0;
                 transition: right 0.2s cubic-bezier(0.33, 0.6, 0.68, 0.6);
                 cursor: default;
 
@@ -106,7 +106,7 @@
             }
 
             #right-slide:checked~.drop_menu {
-                // opacity: 1;
+                opacity: 1;
                 right: 0;
                 top: 76px;
 

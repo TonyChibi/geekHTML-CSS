@@ -193,6 +193,7 @@
   background-color: #fff;
   box-sizing: border-box;
   box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.2117647059);
+  opacity: 0;
   transition: right 0.2s cubic-bezier(0.33, 0.6, 0.68, 0.6);
   cursor: default;
 }
@@ -235,6 +236,7 @@
   transition: all 0.15s;
 }
 .content-box .header .menu_logo #right-slide:checked ~ .drop_menu {
+  opacity: 1;
   right: 0;
   top: 76px;
 }
