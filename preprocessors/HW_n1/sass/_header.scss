@@ -53,6 +53,7 @@
                 box-shadow: $dropdown-box-shadow;
                 // opacity: 0;
                 transition: right 0.2s cubic-bezier(0.33, 0.6, 0.68, 0.6);
+                cursor: default;
 
                 &_inner {
                     display: flex;

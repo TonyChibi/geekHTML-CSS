@@ -56,6 +56,7 @@ main .product_section_description_collection, main .product_section_description_
   box-sizing: border-box;
   box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.2117647059);
   transition: right 0.2s cubic-bezier(0.33, 0.6, 0.68, 0.6);
+  cursor: default;
 }
 .content-box .header .menu_logo .drop_menu_inner {
   display: flex;
