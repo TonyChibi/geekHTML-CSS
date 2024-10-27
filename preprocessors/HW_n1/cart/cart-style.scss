@@ -90,9 +90,15 @@
                     width: 44px;
                     border: solid 1px vars.$cart-product-input-border-color;
                     text-align: center;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        @include mxns.input_hover;
+                    }
 
                     &:focus {
                         outline: none;
+                        @include mxns.input_focus;
                     }
                 }
             }
@@ -231,7 +237,7 @@
                 background: vars.$pink_text_color;
                 padding: 16px 42px;
                 cursor: pointer;
-                transition: all 0.4s;
+                transition: all 0.25s;
 
                 &:hover {
                     @include mxns.pink-button_hover;

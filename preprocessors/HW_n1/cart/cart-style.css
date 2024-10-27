@@ -424,9 +424,14 @@
   width: 44px;
   border: solid 1px #EAEAEA;
   text-align: center;
+  transition: all 0.3s;
+}
+.cart-content .products .cart-product__quantity .value:hover {
+  border-color: #F16D7F;
 }
 .cart-content .products .cart-product__quantity .value:focus {
   outline: none;
+  border-color: #F16D7F;
 }
 .cart-content .products__buttons-box {
   display: flex;
@@ -536,7 +541,7 @@
   background: #F16D7F;
   padding: 16px 42px;
   cursor: pointer;
-  transition: all 0.4s;
+  transition: all 0.25s;
 }
 .cart-content .cart-form .proceed-box__button:hover {
   text-shadow: 0 0 1em #fff;
