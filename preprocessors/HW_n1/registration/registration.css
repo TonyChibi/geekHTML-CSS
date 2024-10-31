@@ -1,4 +1,4 @@
-.footer_footer_manufacturer, .footer_subscribers_subscribe_p, .footer_subscribers_costumers_comment_p, .footer_benefits_section_p, .footer_benefits_section_h2 {
+.registration-content .registration-form .gender-block__gender-box__lable, .registration-content .registration-form__password-tips, .footer_footer_manufacturer, .footer_subscribers_subscribe_p, .footer_subscribers_costumers_comment_p, .footer_benefits_section_p, .footer_benefits_section_h2 {
   font-family: Lato;
   font-weight: 400;
   font-style: normal;
@@ -143,7 +143,7 @@
   background: #F16D7F;
 }
 
-.content-box .header .menu_logo .drop_menu .category_item, .content-box .header .menu_logo .drop_menu .category {
+.registration-content .registration-form .gender-block__gender-box__lable, .registration-content .registration-form__password-tips, .content-box .header .menu_logo .drop_menu .category_item, .content-box .header .menu_logo .drop_menu .category {
   font-family: Lato;
   font-weight: 400;
   font-style: normal;
@@ -251,7 +251,7 @@
   font-style: normal;
 }
 
-.product-card__name, .product-card__description, .product-card__price, .page-heading_h1 {
+.registration-content .registration-form .gender-block__gender-box__lable, .registration-content .registration-form__password-tips, .product-card__name, .product-card__description, .product-card__price, .page-heading_h1 {
   font-family: Lato;
   font-weight: 400;
   font-style: normal;
@@ -361,11 +361,86 @@
 }
 
 .center {
-  margin-left: calc(50% - 800px);
-  margin-right: calc(50% - 800px);
+  padding-left: calc(50% - 800px);
+  padding-right: calc(50% - 800px);
 }
 
 * {
   margin: 0;
   padding: 0;
+}
+
+.registration-content {
+  padding: 64px 230px 96px;
+}
+.registration-content .registration-form {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+}
+.registration-content .registration-form__input-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration-content .registration-form__input-block__input {
+  padding: 13px 17px 16px;
+  border: 1px solid #A4A4A4;
+  outline: none;
+  transition: all 0.3s;
+}
+.registration-content .registration-form__input-block__input:hover {
+  border-color: #F16D7F;
+}
+.registration-content .registration-form__input-block__input:focus {
+  border-color: #F16D7F;
+}
+.registration-content .registration-form__input-block__input::-moz-placeholder {
+  color: #B1B1B1;
+}
+.registration-content .registration-form__input-block__input::placeholder {
+  color: #B1B1B1;
+}
+.registration-content .registration-form .gender-block {
+  width: 132px;
+  display: flex;
+  gap: 20px;
+}
+.registration-content .registration-form .gender-block__gender-box {
+  display: flex;
+  gap: 10px;
+}
+.registration-content .registration-form .gender-block__gender-box__input {
+  color: #A4A4A4;
+}
+.registration-content .registration-form .gender-block__gender-box__lable {
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.registration-content .registration-form .gender-block__gender-box__lable:hover {
+  color: #F16D7F;
+}
+.registration-content .registration-form__password-tips {
+  font-size: 13px;
+  color: #B1B1B1;
+}
+.registration-content .registration-form__submit {
+  color: #fff;
+  background: #F16D7F;
+  padding: 16px 29px;
+  display: flex;
+  gap: 20px;
+  border: none;
+  transition: all 0.25s;
+}
+.registration-content .registration-form__submit:hover {
+  text-shadow: 0 0 1em #fff;
+  border-radius: 1em;
+  outline: 3px solid #F16D7F;
+}
+.registration-content .registration-form__submit:active {
+  outline: none;
 }/*# sourceMappingURL=registration.css.map */

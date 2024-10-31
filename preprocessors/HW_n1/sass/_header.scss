@@ -4,7 +4,7 @@
     overflow: hidden;
 
     .header {
-        // @include margin_center($large_width);
+        // @include center($large_width);
         padding: 19px 230px;
         display: flex;
         justify-content: space-between;

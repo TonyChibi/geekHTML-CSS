@@ -11,3 +11,104 @@
     margin: 0;
     padding: 0;
 }
+
+
+
+.registration-content {
+    padding: 64px 230px 96px;
+
+
+    .registration-form {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items: flex-start;
+
+        &__input-block {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            &__lable {}
+
+            &__input {
+                padding: 13px 17px 16px;
+                border: 1px solid vars.$registration__form__border-color;
+                outline: none;
+                transition: all 0.3s;
+
+                &:hover {
+                    @include mxns.input_hover;
+                }
+
+                &:focus {
+                    @include mxns.input_focus;
+                }
+
+                &::placeholder {
+                    color: vars.$registration__form__text-color
+                }
+            }
+
+
+        }
+
+        .gender-block {
+            width: 132px;
+            display: flex;
+            gap: 20px;
+
+
+            &__gender-box {
+
+                display: flex;
+                gap: 10px;
+                // user-select: none;
+
+                &__input {
+                    color: vars.$registration__form__border-color;
+
+                }
+
+                &__lable {
+                    @extend %lato_400;
+                    font-size: 11px;
+                    cursor: pointer;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        @include mxns.link_hover;
+                    }
+                }
+
+            }
+
+        }
+
+        &__password-tips {
+            @extend %lato_400;
+            font-size: 13px;
+            color: vars.$registration__form__text-color;
+        }
+
+        &__submit {
+            color: vars.$white_text_color;
+            background: vars.$pink_text_color;
+            padding: 16px 29px;
+            display: flex;
+            gap: 20px;
+            border: none;
+            transition: all 0.25s;
+
+            &:hover {
+                @include mxns.pink-button_hover;
+            }
+
+            &:active {
+                @include mxns.pink-buton_active;
+            }
+        }
+
+    }
+}
