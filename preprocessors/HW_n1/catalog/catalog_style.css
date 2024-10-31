@@ -391,8 +391,8 @@ main .catalog__filters .filter-box .filter__name {
 }
 
 .center {
-  padding-left: calc(50% - 800px);
-  padding-right: calc(50% - 800px);
+  margin-left: calc(50% - 800px);
+  margin-right: calc(50% - 800px);
 }
 
 * {

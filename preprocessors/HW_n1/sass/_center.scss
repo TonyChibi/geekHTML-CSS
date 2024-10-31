@@ -2,5 +2,5 @@
 @use "vars.scss" as vars;
 
 .center {
-    @include mxns.center(vars.$large_width);
+    @include mxns.margin_center(vars.$large_width);
 }
