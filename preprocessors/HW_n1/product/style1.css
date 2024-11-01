@@ -11,7 +11,6 @@ main .product_section_description_collection, main .product_section_description_
 }
 
 .content-box {
-  width: 1600px;
   overflow: hidden;
 }
 .content-box .header {

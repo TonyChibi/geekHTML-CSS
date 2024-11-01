@@ -174,7 +174,6 @@ main .catalog__filters .filter-box .filter__name {
 }
 
 .content-box {
-  width: 1600px;
   overflow: hidden;
 }
 .content-box .header {
