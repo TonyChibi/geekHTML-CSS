@@ -3,7 +3,7 @@
 
 .footer {
     // @include center($large_width); 
-    margin-top: 95px;
+    // margin-top: 95px;
 
     &_benefits {
         padding: 103px 230px;
@@ -157,7 +157,7 @@
 
 @media(max-width: $medium-width) {
     .footer {
-        margin-top: 64px;
+        // margin-top: 64px;
 
         &_benefits {
             padding: 48px 204px 64px;
