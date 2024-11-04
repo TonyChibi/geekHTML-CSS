@@ -3,4 +3,20 @@
 
 .center {
     @include mxns.margin_center(vars.$large_width);
+
+
+}
+
+@media(max-width:vars.$medium_width) {
+    .center {
+        @include mxns.margin_center(vars.$medium_width);
+    }
+
+}
+
+@media(max-width:vars.$small_width) {
+    .center {
+        @include mxns.margin_center(vars.$small_width);
+    }
+
 }

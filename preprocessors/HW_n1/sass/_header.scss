@@ -120,3 +120,24 @@
 
     }
 }
+
+
+@media(max-width: $medium_width) {
+    .content-box {
+        .header {
+            padding: 18px 32px;
+        }
+    }
+}
+
+@media(max-width: $small_width) {
+    .header {
+        &_right {
+            .header_button {
+                &:not(:first-child) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

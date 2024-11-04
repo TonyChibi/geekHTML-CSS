@@ -106,6 +106,16 @@ main .product_section_description_collection, main .product_section_description_
   visibility: hidden;
 }
 
+@media (max-width: 768px) {
+  .content-box .header {
+    padding: 18px 32px;
+  }
+}
+@media (max-width: 426px) {
+  .header_right .header_button:not(:first-child) {
+    display: none;
+  }
+}
 main .related_product_item_section_descr {
   font-family: Lato;
   font-weight: 300;
@@ -144,12 +154,12 @@ main .product_section_description_collection, main .product_section_description_
   gap: 16px;
 }
 .footer_benefits_section_h2 {
-  font-size: 19.96px;
+  font-size: 20px;
   line-height: 24px;
   color: #FBFBFB;
 }
 .footer_benefits_section_p {
-  font-size: 13.972px;
+  font-size: 14px;
   line-height: 17px;
   text-align: center;
   color: #FBFBFB;
@@ -257,6 +267,45 @@ main .product_section_description_collection, main .product_section_description_
   background: #F16D7F;
 }
 
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 64px;
+  }
+  .footer_benefits {
+    padding: 48px 204px 64px;
+    gap: 48px;
+    flex-direction: column;
+  }
+  .footer_benefits_section_p {
+    font-family: Lato;
+    font-weight: 300;
+    font-style: normal;
+  }
+  .footer_subscribers {
+    flex-direction: column;
+    padding: 64px 204px 120px;
+    gap: 48px;
+  }
+  .footer_footer {
+    padding-left: 30px;
+    padding-right: 24px;
+  }
+}
+@media (max-width: 426px) {
+  .footer_benefits {
+    padding: 48px 32px 80px;
+  }
+  .footer_subscribers {
+    padding: 64px 32px 110px;
+  }
+  .footer_subscribers_subscribe_form {
+    padding-top: 22px;
+  }
+  .footer_footer {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+}
 main .related_product_item_section_descr, .page-heading_breadcrumbs_list {
   font-family: Lato;
   font-weight: 300;
@@ -280,6 +329,18 @@ main .product_section_description_collection, main .product_section_description_
   margin-right: calc(50% - 800px);
 }
 
+@media (max-width: 768px) {
+  .center {
+    margin-left: calc(50% - 384px);
+    margin-right: calc(50% - 384px);
+  }
+}
+@media (max-width: 426px) {
+  .center {
+    margin-left: calc(50% - 213px);
+    margin-right: calc(50% - 213px);
+  }
+}
 .page-heading {
   display: flex;
   justify-content: space-between;

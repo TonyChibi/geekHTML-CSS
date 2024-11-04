@@ -42,12 +42,12 @@ main .catalog__filters .filter-box .filter__name {
   gap: 16px;
 }
 .footer_benefits_section_h2 {
-  font-size: 19.96px;
+  font-size: 20px;
   line-height: 24px;
   color: #FBFBFB;
 }
 .footer_benefits_section_p {
-  font-size: 13.972px;
+  font-size: 14px;
   line-height: 17px;
   text-align: center;
   color: #FBFBFB;
@@ -155,6 +155,45 @@ main .catalog__filters .filter-box .filter__name {
   background: #F16D7F;
 }
 
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 64px;
+  }
+  .footer_benefits {
+    padding: 48px 204px 64px;
+    gap: 48px;
+    flex-direction: column;
+  }
+  .footer_benefits_section_p {
+    font-family: Lato;
+    font-weight: 300;
+    font-style: normal;
+  }
+  .footer_subscribers {
+    flex-direction: column;
+    padding: 64px 204px 120px;
+    gap: 48px;
+  }
+  .footer_footer {
+    padding-left: 30px;
+    padding-right: 24px;
+  }
+}
+@media (max-width: 426px) {
+  .footer_benefits {
+    padding: 48px 32px 80px;
+  }
+  .footer_subscribers {
+    padding: 64px 32px 110px;
+  }
+  .footer_subscribers_subscribe_form {
+    padding-top: 22px;
+  }
+  .footer_footer {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+}
 main .catalog .pagination .pages-list .page {
   font-family: Lato;
   font-weight: 300;
@@ -269,6 +308,16 @@ main .catalog__filters .filter-box .filter__name {
   visibility: hidden;
 }
 
+@media (max-width: 768px) {
+  .content-box .header {
+    padding: 18px 32px;
+  }
+}
+@media (max-width: 426px) {
+  .header_right .header_button:not(:first-child) {
+    display: none;
+  }
+}
 main .catalog .pagination .pages-list .page, .page-heading_breadcrumbs_list {
   font-family: Lato;
   font-weight: 300;
@@ -348,7 +397,7 @@ main .catalog__filters .filter-box .filter__name {
   gap: 11px;
   color: #fff;
   border: solid 1px #fff;
-  background: rgba(58, 56, 56, 0.8);
+  background: none;
 }
 .product-card__image-box .cart-button-box .cart-button svg {
   fill: #fff;
@@ -383,6 +432,13 @@ main .catalog__filters .filter-box .filter__name {
   color: #F16D7F;
 }
 
+@media (max-width: 768px) {
+  .product-card__description {
+    font-family: Lato;
+    font-weight: 300;
+    font-style: normal;
+  }
+}
 .pawn-cursor {
   cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g fill="%23000"><path d="M18 7c-3 0-5.5-1.5-9 2s-2 6-2 9c0 5 4.1 5.63 6 5 3-1 1-3 4-6s5-1 6-4c.63-1.9 0-6-5-6Z"></path><circle cx="8.2" cy="4" r="2"></circle><circle cx="4" cy="8.2" r="2"></circle><circle cx="14" cy="3" r="2"></circle><circle cx="3" cy="14" r="2"></circle></g></svg>'), auto;
 }
@@ -395,6 +451,18 @@ main .catalog__filters .filter-box .filter__name {
   margin-right: calc(50% - 800px);
 }
 
+@media (max-width: 768px) {
+  .center {
+    margin-left: calc(50% - 384px);
+    margin-right: calc(50% - 384px);
+  }
+}
+@media (max-width: 426px) {
+  .center {
+    margin-left: calc(50% - 213px);
+    margin-right: calc(50% - 213px);
+  }
+}
 * {
   margin: 0;
   padding: 0;

@@ -39,6 +39,12 @@
 
 // above extensions
 
+@mixin lato($weight) {
+    font-family: Lato;
+    font-weight: $weight;
+    font-style: normal;
+}
+
 
 @mixin center($width) {
     padding-left: calc(50% - $width / 2);

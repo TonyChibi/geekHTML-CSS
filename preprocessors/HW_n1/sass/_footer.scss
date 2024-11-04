@@ -21,14 +21,14 @@
 
             &_h2 {
                 @extend %lato_400;
-                font-size: 19.96px;
+                font-size: 20px;
                 line-height: 24px;
                 color: $benefits_text_color ;
             }
 
             &_p {
                 @extend %lato_400;
-                font-size: 13.972px;
+                font-size: 14px;
                 line-height: 17px;
                 text-align: center;
                 color: $benefits_text_color;
@@ -153,4 +153,54 @@
         }
     }
 
+}
+
+@media(max-width: $medium-width) {
+    .footer {
+        margin-top: 64px;
+
+        &_benefits {
+            padding: 48px 204px 64px;
+            gap: 48px;
+            flex-direction: column;
+
+            &_section {
+                &_p {
+                    @include lato(300);
+                }
+            }
+        }
+
+        &_subscribers {
+            flex-direction: column;
+            padding: 64px 204px 120px;
+            gap: 48px;
+        }
+
+        &_footer {
+            padding-left: 30px;
+            padding-right: 24px;
+        }
+    }
+}
+
+@media(max-width: $small-width) {
+    .footer {
+        &_benefits {
+            padding: 48px 32px 80px;
+        }
+
+        &_subscribers {
+            padding: 64px 32px 110px;
+
+            &_subscribe_form {
+                padding-top: 22px;
+            }
+        }
+
+        &_footer {
+            flex-direction: column-reverse;
+            gap: 40px
+        }
+    }
 }

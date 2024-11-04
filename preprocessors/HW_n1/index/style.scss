@@ -3,6 +3,7 @@
 @use "../sass/vars" as vars;
 @use "../sass/mixins" as mxns;
 @use "../sass/center";
+@use "../sass/product-card";
 // above uses
 
 
@@ -13,63 +14,12 @@
 
 }
 
-// make sure of 0s margin and padding
-
-@mixin center($width) {
-    padding-left: calc(50% - $width / 2);
-    padding-right: calc(50% - $width / 2);
-}
-
-@mixin header_site() {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 30px;
-    padding: 19px 180px 18px;
-}
-
-@mixin flex_center() {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-// above mixins
-
-%lato_400 {
-    font-family: Lato;
-    font-weight: 400;
-    font-style: normal;
-}
-
-%lato_700 {
-    font-family: Lato;
-    font-weight: 700;
-    font-style: normal;
-}
-
-%lato_900 {
-    font-family: Lato;
-    font-weight: 900;
-    font-style: normal;
-}
-
-
-
-
-// above extensions
-
-
-
-
-
-
 
 .main {
     // @include center(vars.$large_width);
 
     .brand {
-        @include center(vars.$large_width);
+        @include mxns.center(vars.$large_width);
         max-width: vars.$large_width;
         display: flex;
         align-items: center;
@@ -104,6 +54,7 @@
                 font-size: 48px;
                 line-height: 58px;
                 color: vars.$dark_back_color;
+
             }
 
             &_h2 {
@@ -128,7 +79,9 @@
     }
 
     .agitation {
-        @include center(vars.$content_L_width);
+        // @include mxns.center(vars.$content_L_width);
+        padding-left: 230px;
+        padding-right: 230px;
         max-width: vars.$content_L_width;
         display: grid;
         grid-template: 260px 180px/ repeat(3, 1fr);
@@ -136,7 +89,7 @@
         gap: 30px;
 
         %item {
-            @include flex_center();
+            @include mxns.flex_center();
             flex-flow: column;
             background-size: cover;
             background-repeat: no-repeat;
@@ -170,16 +123,21 @@
         }
 
         &_h4 {
+            @extend %lato_400;
+            font-size: 16px;
             color: vars.$white_text_color;
         }
 
         &_h3 {
+            @extend %lato_700;
+            font-size: 24px;
             color: vars.$pink_text_color;
         }
     }
 
     .fetured_block {
-        @include center(vars.$large_width);
+        padding-left: 230px;
+        padding-right: 230px;
 
         &_header {
             display: flex;
@@ -190,11 +148,6 @@
             &_h2 {
 
                 @extend %lato_400;
-                left: 44.4%;
-                right: 44.23%;
-                top: 50.26%;
-                bottom: 48.51%;
-
                 font-size: 30px;
                 line-height: 36px;
                 /* identical to box height */
@@ -211,88 +164,20 @@
         }
 
         &_items_block {
-            @include center(vars.$content_L_width);
+
             display: grid;
-            grid-template: 581px 581px/ repeat(3, calc(33.333% - 20px));
+            // grid-template: 581px 581px/ repeat(3, calc(33.333% - 20px));
+            grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+
             gap: 30px;
 
-            &_item {
-                background: vars.$item_back_color;
 
-                &_image_box {
-                    height: 420px;
-
-                    &_cart_button_box {
-                        display: none;
-                        position: absolute;
-                        width: 100%;
-                        height: 420px;
-                        background: vars.$cart_button_back_color;
-                        opacity: 80%;
-
-                        &_button {
-                            display: flex;
-                            align-items: center;
-                            gap: 11px;
-                            padding: 8px 12px;
-                            background: vars.$cart_button_back_color;
-                            color: #fff;
-                            border: solid #fff 1px;
-                            height: fit-content;
-                            width: fit-content;
-                        }
-                    }
-
-                    &_img {
-                        width: -webkit-fill-available;
-                        height: 420px;
-                    }
-
-                    &:hover &_cart_button_box {
-                        @include flex_center();
-                        position: relative;
-                        top: -424px;
-                    }
-                }
-
-                &_section {
-                    display: flex;
-                    flex-flow: column;
-                    align-items: start;
-                    gap: 12px;
-                    margin: 24px 28px 20px 16px;
-
-                    &_h2 {
-                        @extend %lato_400;
-                        font-size: 13px;
-                        line-height: 16px;
-                        color: vars.$product-card_name_color;
-                    }
-
-                    &_p {
-                        @extend %lato_400;
-                        font-size: 14px;
-                        line-height: 17px;
-                        color: vars.$product-card_description_color;
-                    }
-
-                    &_price {
-                        @extend %lato_400;
-                        font-size: 16px;
-                        line-height: 19px;
-                        color: vars.$pink_text_color;
-                    }
-                }
-
-
-
-            }
         }
 
         &_footer {
             display: flex;
             justify-content: center;
-            margin-top: 48px;
+            padding-top: 48px;
 
             &_browse_all_button {
                 width: 212px;
@@ -308,155 +193,114 @@
     }
 }
 
-// .footer {
-//     @include center($large_width);
-//     margin-top: 95px;
+@media (max-width: vars.$medium_width) {
+    .main {
+        // @include center(vars.$large_width);
 
-//     &_benefits {
-//         padding: 103px 230px;
-//         display: flex;
-//         align-items: baseline;
-//         justify-content: space-around;
-//         background: $dark_back_color;
-//         gap: 30px;
+        .brand {
 
-//         &_section {
-//             @include flex_center();
-//             flex-flow: column wrap;
-//             text-align: center;
-//             gap: 16px;
 
-//             &_h2 {
-//                 @extend %lato_400;
-//                 font-size: 19.96px;
-//                 line-height: 24px;
-//                 color: $benefits_text_color ;
-//             }
 
-//             &_p {
-//                 @extend %lato_400;
-//                 font-size: 13.972px;
-//                 line-height: 17px;
-//                 text-align: center;
-//                 color: $benefits_text_color;
-//             }
-//         }
-//     }
 
-//     &_subscribers {
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//         text-align: center;
-//         background-image: url(images/footer_background.png);
-//         background-size: cover;
-//         @include center(920px);
-//         padding-bottom: 96px;
-//         padding-top: 96px;
-//         gap: 223px;
+            &_mark {
 
-//         &_costumers_comment {
-//             max-width: 360px;
-//             display: flex;
-//             flex-direction: column;
-//             align-items: center;
-//             gap: 30px;
 
-//             &_img {
-//                 max-width: 96px;
+                .gorizontal_draw {}
 
-//             }
+                &_h1 {
+                    font-size: 44px;
+                }
 
-//             &_p {
-//                 @extend %lato_400;
-//                 font-size: 20px;
-//                 line-height: 24px;
-//                 text-align: center;
-//                 color: $dark_back_color;
-//             }
-//         }
+                &_h2 {
+                    font-size: 24px;
+                }
 
-//         &_subscribe {
-//             @extend %lato_700;
-//             font-size: 24px;
-//             line-height: 167.2%;
-//             /* or 40px */
-//             text-align: center;
-//             color: $dark_back_color;
+                &_fashion {}
 
-//             &_p {
-//                 @extend %lato_400;
-//                 width: max-content;
-//                 font-size: 18px;
-//                 line-height: 167.2%;
-//                 /* or 30px */
-//                 text-align: center;
-//                 columns: $dark_back_color;
-//             }
+            }
 
-//             &_form {
-//                 display: flex;
 
-//                 &_email_input {
-//                     border-radius: 30px 0% 0% 30px;
-//                     padding: 8px 64px 8px 22px;
-//                     border: none;
-//                     background: $subscribe_input_back_color;
-//                     color: $dark_back_color;
-//                 }
+        }
 
-//                 &_input_button {
-//                     border-radius: 0 30px 30px 0;
-//                     padding: 8px;
-//                     border: none;
-//                     background: $pink_text_color;
-//                     color: $white_text_color;
-//                 }
-//             }
+        .agitation {
+            padding-left: 16px;
+            padding-right: 16px;
+            grid-template: 168px 116px / repeat(3, 1fr);
+        }
 
-//         }
-//     }
+        .fetured_block {
+            padding-left: 16px;
+            padding-right: 16px;
 
-//     &_footer {
-//         @include center($large_width);
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//         padding: 24px 230px;
-//         background: $dark_back_color;
+            &_items_block {
+                grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+                gap: 16px;
 
-//         &_manufacturer {
-//             @extend %lato_400;
-//             line-height: 19.2px;
-//             text-align: left;
-//             color: $benefits_text_color;
-//         }
 
-//         &_icons {
-//             display: flex;
-//             flex-direction: row;
-//             gap: 8px;
+            }
 
-//             &_button {
-//                 border: none;
-//                 width: fit-content;
-//                 height: fit-content;
+            &_footer {
+                padding-top: 32px;
 
-//                 &_icon {
-//                     background: $white_text_color;
-//                     width: 32px;
-//                     height: 16px;
-//                     display: flex;
-//                     justify-content: center;
-//                     padding: 8px 0;
 
-//                     &:hover {
-//                         fill: #fff;
-//                         background: #F16D7F;
-//                     }
-//                 }
-//             }
-//         }
-//     }
+                &_browse_all_button {}
+            }
+        }
+    }
+}
 
-// }
+@media (max-width: vars.$small_width) {
+    .main {
+
+
+        .brand {
+            // @include mxns.flex_center;
+            padding: 148px 56px;
+
+            &_img {
+                display: none;
+            }
+        }
+
+        .agitation {
+            grid-template: repeat(3, 248px) 112px / 344px;
+            gap: 32px;
+            padding-left: 32px;
+            padding-right: 32px;
+
+            &_item_1 {
+                grid-area: 1;
+
+            }
+
+            &_item_2 {
+                grid-area: 2;
+
+
+            }
+
+            &_item_3 {
+
+                grid-area: 3;
+
+            }
+
+            &_item_lower {
+
+                grid-area: 4;
+
+            }
+
+        }
+
+        .fetured_block {
+            padding-left: 32px;
+            padding-right: 32px;
+
+            &_items_block {
+                grid-template: repeat(6, 580px) / 1fr;
+                gap: 16px;
+            }
+        }
+    }
+}
