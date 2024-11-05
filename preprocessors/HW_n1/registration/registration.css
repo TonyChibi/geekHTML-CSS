@@ -1,4 +1,4 @@
-.registration-content .registration-form .gender-block__gender-box__lable, .registration-content .registration-form__password-tips, .registration-content .loyalty-perks__heading, .registration-content .loyalty-perks__description, .registration-content .loyalty-perks__perks-box__item, .footer_footer_manufacturer, .footer_subscribers_subscribe_p, .footer_subscribers_costumers_comment_p, .footer_benefits_section_p, .footer_benefits_section_h2 {
+.registration-content .registration-form__input-block__lable, .registration-content .registration-form .gender-block__gender-box__lable, .registration-content .registration-form__password-tips, .registration-content .loyalty-perks__heading, .registration-content .loyalty-perks__description, .registration-content .loyalty-perks__perks-box__item, .footer_footer_manufacturer, .footer_subscribers_subscribe_p, .footer_subscribers_costumers_comment_p, .footer_benefits_section_p, .footer_benefits_section_h2 {
   font-family: Lato;
   font-weight: 400;
   font-style: normal;
@@ -176,7 +176,7 @@
     gap: 40px;
   }
 }
-.registration-content .registration-form .gender-block__gender-box__lable, .registration-content .registration-form__password-tips, .registration-content .loyalty-perks__heading, .registration-content .loyalty-perks__description, .registration-content .loyalty-perks__perks-box__item, .content-box .header .menu_logo .drop_menu .category_item, .content-box .header .menu_logo .drop_menu .category {
+.registration-content .registration-form__input-block__lable, .registration-content .registration-form .gender-block__gender-box__lable, .registration-content .registration-form__password-tips, .registration-content .loyalty-perks__heading, .registration-content .loyalty-perks__description, .registration-content .loyalty-perks__perks-box__item, .content-box .header .menu_logo .drop_menu .category_item, .content-box .header .menu_logo .drop_menu .category {
   font-family: Lato;
   font-weight: 400;
   font-style: normal;
@@ -294,7 +294,7 @@
   font-style: normal;
 }
 
-.registration-content .registration-form .gender-block__gender-box__lable, .registration-content .registration-form__password-tips, .registration-content .loyalty-perks__heading, .registration-content .loyalty-perks__description, .registration-content .loyalty-perks__perks-box__item, .product-card__name, .product-card__description, .product-card__price, .page-heading_h1 {
+.registration-content .registration-form__input-block__lable, .registration-content .registration-form .gender-block__gender-box__lable, .registration-content .registration-form__password-tips, .registration-content .loyalty-perks__heading, .registration-content .loyalty-perks__description, .registration-content .loyalty-perks__perks-box__item, .product-card__name, .product-card__description, .product-card__price, .page-heading_h1 {
   font-family: Lato;
   font-weight: 400;
   font-style: normal;
@@ -446,9 +446,14 @@
   align-items: flex-start;
 }
 .registration-content .registration-form__input-block {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.registration-content .registration-form__input-block__lable {
+  font-size: 16px;
+  text-align: left;
 }
 .registration-content .registration-form__input-block__input {
   padding: 13px 17px 16px;
@@ -514,11 +519,6 @@
   display: flex;
   flex-direction: column;
   gap: 22px;
-}
-.registration-content .loyalty-perks__heading {
-  font-size: 24px;
-}
-.registration-content .loyalty-perks__description {
   font-size: 24px;
 }
 .registration-content .loyalty-perks__perks-box {
@@ -526,10 +526,22 @@
   flex-direction: column;
   gap: 16px;
 }
-.registration-content .loyalty-perks__perks-box__item {
-  font-size: 24px;
-}
 .registration-content .loyalty-perks__perks-box__item::before {
   padding-right: 22px;
   content: url('data:image/svg+xml;utf8,<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z" fill="black" /> </svg> ');
+}
+
+@media (max-width: 768px) {
+  .registration-content {
+    padding: 40px 16px 96px;
+    gap: 22px;
+  }
+  .registration-content .loyalty-perks {
+    font-size: 16px;
+  }
+}
+@media (max-width: 426px) {
+  .registration-content {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=registration.css.map */
