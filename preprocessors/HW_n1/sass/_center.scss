@@ -2,21 +2,21 @@
 @use "vars.scss" as vars;
 
 .center {
-    @include mxns.margin_center(vars.$large_width);
+    @include mxns.margin_center(100vw);
 
 
 }
 
-@media(max-width:vars.$medium_width) {
-    .center {
-        @include mxns.margin_center(vars.$medium_width);
-    }
+// @media(max-width:vars.$medium_width) {
+//     .center {
+//         @include mxns.margin_center(vars.$medium_width);
+//     }
 
-}
+// }
 
-@media(max-width:vars.$small_width) {
-    .center {
-        @include mxns.margin_center(vars.$small_width);
-    }
+// @media(max-width:vars.$small_width) {
+//     .center {
+//         @include mxns.margin_center(vars.$small_width);
+//     }
 
-}
+// }
