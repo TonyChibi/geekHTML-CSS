@@ -475,6 +475,7 @@
   gap: 6px;
   position: relative;
   color: #575757;
+  font-size: 22px;
 }
 .cart-content .products .cart-product__info .crest-button {
   position: absolute;
@@ -487,6 +488,7 @@
 }
 .cart-content .products .cart-product__name {
   text-align: start;
+  font-size: 24px;
   padding-bottom: 36px;
   color: #222222;
 }
@@ -514,7 +516,7 @@
 .cart-content .products__buttons-box {
   display: flex;
   justify-content: space-between;
-  padding-top: 72px;
+  padding-top: 32px;
 }
 .cart-content .products__button {
   padding: 16px 40px;
@@ -541,6 +543,7 @@
 }
 .cart-content .cart-form .shipping-form__lable {
   color: #222222;
+  font-size: 16px;
 }
 .cart-content .cart-form .shipping-form__input {
   padding: 16px 1.6rem;
@@ -628,4 +631,72 @@
 }
 .cart-content .cart-form .proceed-box__button:active {
   outline: none;
+}
+
+@media (max-width: 768px) {
+  .cart-content {
+    padding: 60px 16px 128px;
+    flex-direction: column;
+    gap: 64px;
+  }
+  .cart-content .products .cart-product {
+    width: 734px;
+  }
+  .cart-content .products__buttons-box {
+    padding-top: 22px;
+  }
+  .cart-content .cart-form {
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: space-between;
+  }
+  .cart-content .cart-form .shipping-form {
+    width: 360px;
+  }
+}
+@media (max-width: 426px) {
+  .cart-content {
+    gap: 48px;
+    padding: 40px 8px 96px;
+  }
+  .cart-content .products {
+    gap: 32px;
+    align-items: center;
+  }
+  .cart-content .products .cart-product {
+    width: 358px;
+  }
+  .cart-content .products .cart-product__info {
+    padding: 14px 56px 38px 18px;
+    gap: 4px;
+    font-size: 14px;
+  }
+  .cart-content .products .cart-product__name {
+    padding-bottom: 24px;
+    font-size: 16px;
+  }
+  .cart-content .products .cart-product__image {
+    width: 144px;
+  }
+  .cart-content .products .cart-product .crest-button {
+    top: 18px;
+    right: 12px;
+  }
+  .cart-content .products__buttons-box {
+    gap: 10px;
+    padding-top: 0;
+  }
+  .cart-content .products__button {
+    width: 175px;
+    padding: 10px 8px;
+    font-size: 12px;
+  }
+  .cart-content .cart-form {
+    padding-left: 24px;
+    padding-right: 24px;
+    flex-direction: column;
+  }
+  .cart-content .cart-form .shipping-form {
+    width: 360px;
+  }
 }/*# sourceMappingURL=cart-style.css.map */

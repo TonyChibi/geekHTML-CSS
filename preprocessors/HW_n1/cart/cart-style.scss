@@ -12,14 +12,6 @@
     padding: 0;
 }
 
-
-
-
-
-
-
-
-
 .cart-content {
     padding: 96px 230px 128px;
     user-select: none;
@@ -54,6 +46,7 @@
                 position: relative;
                 color: vars.$cart-product-text-color;
                 @extend %lato_400;
+                font-size: 22px;
 
 
                 .crest-button {
@@ -71,6 +64,7 @@
             &__name {
                 text-align: start;
                 @extend %lato_400;
+                font-size: 24px;
                 padding-bottom: 36px;
                 color: vars.$cart-product-name-color;
             }
@@ -107,7 +101,7 @@
         &__buttons-box {
             display: flex;
             justify-content: space-between;
-            padding-top: 72px;
+            padding-top: 32px;
         }
 
         &__button {
@@ -141,6 +135,7 @@
             &__lable {
                 @extend %lato_400;
                 color: vars.$shipping-form-text-color;
+                font-size: 16px;
 
             }
 
@@ -252,4 +247,93 @@
         }
     }
 
+}
+
+@media(max-width: vars.$medium_width) {
+    .cart-content {
+        padding: 60px 16px 128px;
+        flex-direction: column;
+        gap: 64px;
+
+        .products {
+            .cart-product {
+                width: 734px
+            }
+
+            &__buttons-box {
+                padding-top: 22px;
+            }
+        }
+
+        .cart-form {
+            width: -webkit-fill-available;
+            display: flex;
+            justify-content: space-between;
+
+            .shipping-form {
+                width: 360px;
+            }
+
+            // .proceed-box {}
+        }
+    }
+}
+
+@media(max-width: vars.$small_width) {
+    .cart-content {
+        gap: 48px;
+        padding: 40px 8px 96px;
+
+        .products {
+            gap: 32px;
+            align-items: center;
+
+            .cart-product {
+                width: 358px;
+
+                &__info {
+                    padding: 14px 56px 38px 18px;
+                    gap: 4px;
+                    font-size: 14px;
+                }
+
+                &__name {
+                    padding-bottom: 24px;
+                    font-size: 16px;
+                }
+
+                &__image {
+                    width: 144px;
+                }
+
+                .crest-button {
+                    top: 18px;
+                    right: 12px;
+                }
+            }
+
+            &__buttons-box {
+                gap: 10px;
+                padding-top: 0;
+            }
+
+            &__button {
+                width: 175px;
+                padding: 10px 8px;
+                font-size: 12px;
+
+            }
+
+        }
+
+        .cart-form {
+            padding-left: 24px;
+            padding-right: 24px;
+            flex-direction: column;
+
+            .shipping-form {
+                width: 360px;
+            }
+        }
+    }
 }
