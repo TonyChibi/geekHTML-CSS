@@ -26,7 +26,7 @@
 
 
         .cart-product {
-            width: 652px;
+            max-width: 652px;
             display: flex;
 
             box-sizing: border-box;
@@ -34,7 +34,7 @@
 
 
             &__image {
-                width: 262px;
+                max-width: 262px;
                 box-sizing: border-box;
             }
 
@@ -81,7 +81,7 @@
                 gap: 24px;
 
                 .value {
-                    width: 44px;
+                    max-width: 44px;
                     border: solid 1px vars.$cart-product-input-border-color;
                     text-align: center;
                     transition: all 0.3s;
@@ -123,7 +123,7 @@
     }
 
     .cart-form {
-        width: 360px;
+        max-width: 360px;
 
         .shipping-form {
             display: flex;
@@ -176,7 +176,7 @@
                 @extend %lato_400;
                 padding: 12px 1.4rem;
                 color: vars.$shipping-form-color;
-                width: 10rem;
+                max-width: 10rem;
                 background: none;
                 border: 1px solid vars.$shipping-form-color;
                 cursor: pointer;
@@ -257,7 +257,7 @@
 
         .products {
             .cart-product {
-                width: 734px
+                max-width: 734px
             }
 
             &__buttons-box {
@@ -271,7 +271,7 @@
             justify-content: space-between;
 
             .shipping-form {
-                width: 360px;
+                max-width: 360px;
             }
 
             // .proceed-box {}
@@ -289,7 +289,7 @@
             align-items: center;
 
             .cart-product {
-                width: 358px;
+                max-width: 358px;
 
                 &__info {
                     padding: 14px 56px 38px 18px;
@@ -303,7 +303,7 @@
                 }
 
                 &__image {
-                    width: 144px;
+                    max-width: 144px;
                 }
 
                 .crest-button {
@@ -318,7 +318,7 @@
             }
 
             &__button {
-                width: 175px;
+                max-width: 175px;
                 padding: 10px 8px;
                 font-size: 12px;
 
@@ -332,7 +332,7 @@
             flex-direction: column;
 
             .shipping-form {
-                width: 360px;
+                max-width: 360px;
             }
         }
     }

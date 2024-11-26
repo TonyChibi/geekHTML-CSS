@@ -16,7 +16,6 @@
 
 
 .main {
-    // @include center(vars.$large_width);
 
     .brand {
         @include mxns.center(vars.$large_width);
@@ -79,7 +78,6 @@
     }
 
     .agitation {
-        // @include mxns.center(vars.$content_L_width);
         padding-left: 230px;
         padding-right: 230px;
         max-width: vars.$content_L_width;
@@ -178,12 +176,13 @@
             display: flex;
             justify-content: center;
             padding-top: 48px;
+            padding-bottom: 96px;
 
             &_browse_all_button {
-                width: 212px;
+                padding: 8px 16px;
+                max-width: 212px;
                 height: 48px;
                 gap: 0px;
-                border: 1px 0px 0px 0px;
                 opacity: 0px;
                 color: vars.$pink_text_color;
                 border: 1px solid vars.$pink_text_color;
@@ -195,7 +194,6 @@
 
 @media (max-width: vars.$medium_width) {
     .main {
-        // @include center(vars.$large_width);
 
         .brand {
 
@@ -205,7 +203,6 @@
             &_mark {
 
 
-                .gorizontal_draw {}
 
                 &_h1 {
                     font-size: 44px;
@@ -215,7 +212,6 @@
                     font-size: 24px;
                 }
 
-                &_fashion {}
 
             }
 
@@ -243,7 +239,6 @@
                 padding-top: 32px;
 
 
-                &_browse_all_button {}
             }
         }
     }

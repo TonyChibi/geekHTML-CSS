@@ -2,8 +2,7 @@
 
 
 .footer {
-    // @include center($large_width); 
-    // margin-top: 95px;
+
 
     &_benefits {
         padding: 103px 230px;
@@ -137,7 +136,7 @@
 
                 &_icon {
                     background: $white_text_color;
-                    width: 32px;
+                    max-width: 32px;
                     height: 16px;
                     display: flex;
                     justify-content: center;

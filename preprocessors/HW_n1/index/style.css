@@ -42,7 +42,7 @@
 }
 .content-box .header_button {
   cursor: pointer;
-  width: 26px;
+  max-width: 26px;
   height: 26.79px;
   top: 28.21px;
   left: 316px;
@@ -55,7 +55,7 @@
   justify-content: flex-start;
   position: absolute;
   z-index: 999;
-  width: 232px;
+  max-width: 232px;
   top: 76px;
   right: -232px;
   background-color: #fff;
@@ -258,7 +258,7 @@
 }
 .footer_footer_icons_button_icon {
   background: #fff;
-  width: 32px;
+  max-width: 32px;
   height: 16px;
   display: flex;
   justify-content: center;
@@ -324,11 +324,12 @@
   font-style: normal;
 }
 
-.center {
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
+@media (min-width: 1600px) {
+  .center {
+    margin-left: calc(50% - 800px);
+    margin-right: calc(50% - 800px);
+  }
 }
-
 .product-card {
   background: #F8F8F8;
 }
@@ -516,12 +517,13 @@
   display: flex;
   justify-content: center;
   padding-top: 48px;
+  padding-bottom: 96px;
 }
 .main .fetured_block_footer_browse_all_button {
-  width: 212px;
+  padding: 8px 16px;
+  max-width: 212px;
   height: 48px;
   gap: 0px;
-  border: 1px 0px 0px 0px;
   opacity: 0px;
   color: #F16D7F;
   border: 1px solid #F16D7F;

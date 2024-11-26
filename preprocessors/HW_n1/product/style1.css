@@ -36,7 +36,7 @@ main .product_section_description_collection, main .product_section_description_
 }
 .content-box .header_button {
   cursor: pointer;
-  width: 26px;
+  max-width: 26px;
   height: 26.79px;
   top: 28.21px;
   left: 316px;
@@ -49,7 +49,7 @@ main .product_section_description_collection, main .product_section_description_
   justify-content: flex-start;
   position: absolute;
   z-index: 999;
-  width: 232px;
+  max-width: 232px;
   top: 76px;
   right: -232px;
   background-color: #fff;
@@ -252,7 +252,7 @@ main .product_section_description_collection, main .product_section_description_
 }
 .footer_footer_icons_button_icon {
   background: #fff;
-  width: 32px;
+  max-width: 32px;
   height: 16px;
   display: flex;
   justify-content: center;
@@ -318,11 +318,12 @@ main .product_section_description_collection, main .product_section_description_
   font-style: normal;
 }
 
-.center {
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
+@media (min-width: 1600px) {
+  .center {
+    margin-left: calc(50% - 800px);
+    margin-right: calc(50% - 800px);
+  }
 }
-
 .page-heading {
   display: flex;
   justify-content: space-between;
@@ -429,7 +430,7 @@ main .product_section_description_stroke {
   margin: 12px 0;
   background-color: #F16D7F;
   color: #F16D7F;
-  width: 64px;
+  max-width: 64px;
   height: 4px;
 }
 main .product_section_description_name {
@@ -486,7 +487,7 @@ main .related_product {
   gap: 30px;
 }
 main .related_product_item {
-  width: 360px;
+  max-width: 360px;
   background: #F8F8F8;
 }
 main .related_product_item_section {
@@ -530,5 +531,8 @@ main .related_product_item_section_price {
     padding-bottom: 64px;
     flex-direction: column;
     align-items: center;
+  }
+  main .product_section_modifications_dropdown {
+    font-size: 10px;
   }
 }/*# sourceMappingURL=style1.css.map */

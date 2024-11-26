@@ -5,7 +5,6 @@
     overflow: hidden;
 
     .header {
-        // @include center($large_width);
         padding: 19px 230px;
         display: flex;
         justify-content: space-between;
@@ -29,7 +28,7 @@
 
         &_button {
             cursor: pointer;
-            width: 26px;
+            max-width: 26px;
             height: 26.79px;
             top: 28.21px;
             left: 316px;
@@ -46,7 +45,7 @@
                 justify-content: flex-start;
                 position: absolute;
                 z-index: 999;
-                width: 232px;
+                max-width: 232px;
                 top: 76px;
                 right: -232px;
                 background-color: #fff;

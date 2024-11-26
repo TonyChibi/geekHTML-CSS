@@ -78,7 +78,7 @@ main {
                 margin: 12px 0;
                 background-color: vars.$pink_text_color;
                 color: vars.$pink_text_color;
-                width: 64px;
+                max-width: 64px;
                 height: 4px;
             }
 
@@ -151,7 +151,9 @@ main {
         gap: 30px;
 
         &_item {
-            width: 360px;
+            // min-width: 100%;
+
+            max-width: 360px;
 
             background: vars.$item_back_color;
 
@@ -216,6 +218,14 @@ main {
             padding-bottom: 64px;
             flex-direction: column;
             align-items: center;
+        }
+
+        .product_section {
+            &_modifications {
+                &_dropdown {
+                    font-size: 10px;
+                }
+            }
         }
     }
 }

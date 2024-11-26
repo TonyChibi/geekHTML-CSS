@@ -1,13 +1,27 @@
 @use "mixins.scss" as mxns;
 @use "vars.scss" as vars;
 
-.center {
-    @include mxns.margin_center(100vw);
+// .center {
+//     @include mxns.margin_center(100vw);
 
 
+// }
+
+// .center {
+//     @include mxns.margin_center(vars.$large_width);
+
+
+// }
+
+@media(min-width:vars.$large_width) {
+    .center {
+        @include mxns.margin_center(vars.$large_width);
+
+
+    }
 }
 
-// @media(max-width:vars.$medium_width) {
+// @media(min-width:calc(vars.$small_width + 1px)) {
 //     .center {
 //         @include mxns.margin_center(vars.$medium_width);
 //     }
@@ -16,7 +30,7 @@
 
 // @media(max-width:vars.$small_width) {
 //     .center {
-//         @include mxns.margin_center(vars.$small_width);
+//         @include mxns.margin_center(vars.$small_M_width);
 //     }
 
 // }
