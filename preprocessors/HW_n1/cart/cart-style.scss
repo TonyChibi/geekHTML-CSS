@@ -123,7 +123,7 @@
     }
 
     .cart-form {
-        max-width: 360px;
+        // max-width: 360px;
 
         .shipping-form {
             display: flex;
@@ -249,7 +249,7 @@
 
 }
 
-@media(max-width: vars.$medium_width) {
+@media(max-width: vars.$tablet-max_width) {
     .cart-content {
         padding: 60px 16px 128px;
         flex-direction: column;
@@ -279,7 +279,7 @@
     }
 }
 
-@media(max-width: vars.$small_width) {
+@media(max-width: vars.$mobile-max_width) {
     .cart-content {
         gap: 48px;
         padding: 40px 8px 96px;

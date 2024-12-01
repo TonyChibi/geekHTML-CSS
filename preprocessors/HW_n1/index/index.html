@@ -116,10 +116,14 @@
 
                     </div>
                 </div>
-                <button class="header_button profile_logo"><img class="header_button_logo profile_logo"
-                        src="../images/profile_logo.svg" alt="profile"></button>
-                <button class="header_button cart_logo"><img class="header_button_logo cart_logo"
-                        src="../images/cart_logo.svg" alt="cart"></button>
+                <button class="header_button profile_logo">
+                    <a href="../registration/registration.html"><img class="header_button_logo profile_logo"
+                            src="../images/profile_logo.svg" alt="profile">
+                    </a></button>
+                <button class="header_button cart_logo">
+                    <a href="../cart/cart.html"><img class="header_button_logo cart_logo" src="../images/cart_logo.svg"
+                            alt="cart">
+                    </a></button>
             </div>
         </header>
 
@@ -367,6 +371,10 @@
 
 
     </script>
+    <script src="cart.js">
+
+
+    </script>
     <script>
         let blueJacket = new Product("../images/blue_jacet.jpg");
         let highHeels = new Product("../images/high_heels.png");
@@ -385,10 +393,13 @@
         addProduct(cardBlock, pajama);
         addProduct(cardBlock, blackPants);
 
+        addToCart(panama);
+        addToCart(panama);
+        addToCart(panama);
 
-
-
+        deleteFromCart(panama);
     </script>
+
 </body>
 
 </html>

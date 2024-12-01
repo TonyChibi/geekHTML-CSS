@@ -240,7 +240,7 @@
 
 }
 
-@media(max-width: vars.$medium_width) {
+@media(max-width: vars.$tablet-max_width) {
     .catalog {
         padding: 24px 16px 64px;
 
@@ -262,7 +262,7 @@
     }
 }
 
-@media(max-width: vars.$small_width) {
+@media(max-width: vars.$mobile-max_width) {
     .catalog {
         padding-left: 32px;
         padding-right: 32px;

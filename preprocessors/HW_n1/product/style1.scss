@@ -186,7 +186,7 @@ main {
 
 }
 
-@media(max-width: vars.$medium-width) {
+@media(max-width: vars.$tablet-max_width) {
     main {
         .product_section {
             margin: 0;
@@ -211,7 +211,7 @@ main {
     }
 }
 
-@media (max-width: vars.$small_width) {
+@media (max-width: vars.$mobile-max_width) {
     main {
         .related_product {
             padding-top: 64px;

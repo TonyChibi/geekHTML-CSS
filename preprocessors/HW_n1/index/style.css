@@ -258,7 +258,7 @@
 }
 .footer_footer_icons_button_icon {
   background: #fff;
-  max-width: 32px;
+  width: 32px;
   height: 16px;
   display: flex;
   justify-content: center;
@@ -332,6 +332,9 @@
 }
 .product-card {
   background: #F8F8F8;
+}
+.product-card__image {
+  width: -webkit-fill-available;
 }
 .product-card__image-box {
   position: relative;
@@ -530,7 +533,7 @@
   background: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1216px) {
   .main .brand_mark_h1 {
     font-size: 44px;
   }
@@ -554,7 +557,7 @@
     padding-top: 32px;
   }
 }
-@media (max-width: 426px) {
+@media (max-width: 590px) {
   .main .brand {
     padding: 148px 56px;
   }

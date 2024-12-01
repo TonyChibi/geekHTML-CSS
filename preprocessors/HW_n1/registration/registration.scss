@@ -161,7 +161,7 @@
     }
 }
 
-@media (max-width: vars.$medium_width) {
+@media (max-width: vars.$tablet-max_width) {
     .registration-content {
         padding: 40px 16px 96px;
         gap: 22px;
@@ -174,7 +174,7 @@
 
 }
 
-@media (max-width: vars.$small_width) {
+@media (max-width: vars.$mobile-max_width) {
     .registration-content {
         flex-direction: column;
     }

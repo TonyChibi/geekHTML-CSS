@@ -252,7 +252,7 @@ main .product_section_description_collection, main .product_section_description_
 }
 .footer_footer_icons_button_icon {
   background: #fff;
-  max-width: 32px;
+  width: 32px;
   height: 16px;
   display: flex;
   justify-content: center;
@@ -508,7 +508,7 @@ main .related_product_item_section_price {
   color: #F16D7F;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1216px) {
   main .product_section {
     margin: 0;
     top: 0;
@@ -525,7 +525,7 @@ main .related_product_item_section_price {
     display: none;
   }
 }
-@media (max-width: 426px) {
+@media (max-width: 590px) {
   main .related_product {
     padding-top: 64px;
     padding-bottom: 64px;

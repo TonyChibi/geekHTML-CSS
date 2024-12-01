@@ -192,7 +192,7 @@
     }
 }
 
-@media (max-width: vars.$medium_width) {
+@media (max-width: vars.$tablet-max_width) {
     .main {
 
         .brand {
@@ -244,7 +244,7 @@
     }
 }
 
-@media (max-width: vars.$small_width) {
+@media (max-width: vars.$mobile-max_width) {
     .main {
 
 

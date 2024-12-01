@@ -5,6 +5,10 @@
 .product-card {
     background: vars.$item_back_color;
 
+    &__image {
+        width: -webkit-fill-available;
+    }
+
     &__image-box {
         position: relative;
         box-sizing: border-box;
