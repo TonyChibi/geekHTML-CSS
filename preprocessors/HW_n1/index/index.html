@@ -367,11 +367,11 @@
         </footer>
 
     </div>
-    <script src="product.js">
+    <script src="../scripts/product.js">
 
 
     </script>
-    <script src="cart.js">
+    <script src="../scripts/cart.js">
 
 
     </script>
@@ -379,6 +379,8 @@
         let blueJacket = new Product("../images/blue_jacet.jpg");
         let highHeels = new Product("../images/high_heels.png");
         let panama = new Product("../images/panama.png");
+        let panama1 = new Product("../images/panama.png");
+
         let yellowpants = new Product("../images/yellow_pants.png");
         let skyBlueSuit = new Product("../images/sky_blue_suit.png");
         let pajama = new Product("../images/pajama_shirt.png");
@@ -394,10 +396,15 @@
         addProduct(cardBlock, blackPants);
 
         addToCart(panama);
-        addToCart(panama);
-        addToCart(panama);
+        addToCart(highHeels);
+        addToCart(pajama);
+
 
         deleteFromCart(panama);
+        console.log("first");
+        console.log(window.sessionStorage);
+        console.log(JSON.parse(window.sessionStorage.getItem("cartProducts")));
+
     </script>
 
 </body>
