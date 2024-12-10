@@ -13,7 +13,7 @@ function Product(
 function addProduct(element, product) {
     let card = document.createElement('div');
     card.classList.add("product-card");
-    element.appendChild(card);
+    element.append(card);
 
     let imgBox = document.createElement("div");
     imgBox.classList.add("product-card__image-box");

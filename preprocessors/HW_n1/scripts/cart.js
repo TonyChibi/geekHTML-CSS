@@ -1,6 +1,10 @@
 let products = [];
 let storage = window.sessionStorage;
-storage.setItem("cartProducts", JSON.stringify(products))
+
+if (!storage.getItem("cartProducts")) {
+    storage.setItem("cartProducts", JSON.stringify(products))
+
+}
 let icon = document.querySelector("button.header_button.cart_logo");
 console.log(icon.childNodes)
 
@@ -69,7 +73,9 @@ function addToCart(product) {
         icon.appendChild(circle.box);
         console.log(circle.svg)
     } else {
-        // circle.p.textContent = products.length;
+        p = document.querySelector(".cart-circle p");
+        console.log(`else ${document.querySelector(".cart-circle p")}`)
+        p.textContent = products.length;
     }
 
 
@@ -83,4 +89,7 @@ function deleteFromCart(product) {
     storage.setItem("cartProducts", JSON.stringify(products));
     console.log(JSON.parse(storage.cartProducts));
     console.log(JSON.parse(window.sessionStorage.getItem("cartProducts")))
+    p = document.querySelector(".cart-circle p");
+    console.log(`else ${document.querySelector(".cart-circle p")}`)
+    p.textContent = products.length;
 }

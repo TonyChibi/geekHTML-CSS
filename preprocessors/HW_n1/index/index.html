@@ -386,6 +386,7 @@
         let pajama = new Product("../images/pajama_shirt.png");
         let blackPants = new Product('../images/white_shirt.jpg', "pants", " very good fabrique and everything else and eyes also pretty", "33000$");
         let cardBlock = document.querySelector('.fetured_block_items_block');
+        console.log(`the card block: ${cardBlock}`);
 
         addProduct(cardBlock, blueJacket);
         addProduct(cardBlock, highHeels);
@@ -403,7 +404,8 @@
         deleteFromCart(panama);
         console.log("first");
         console.log(window.sessionStorage);
-        console.log(JSON.parse(window.sessionStorage.getItem("cartProducts")));
+        let cart = JSON.parse(window.sessionStorage.getItem("cartProducts"));
+        console.log(cart[0].src);
 
     </script>
 

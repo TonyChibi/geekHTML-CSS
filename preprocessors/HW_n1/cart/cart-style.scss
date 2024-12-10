@@ -24,79 +24,86 @@
         flex-direction: column;
         gap: 40px;
 
-
-        .cart-product {
-            max-width: 652px;
+        .products-box {
             display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-self: center;
 
-            box-sizing: border-box;
-            box-shadow: vars.$cart-product-box-shadow;
+            .cart-product {
+                max-width: 652px;
+                display: flex;
 
-
-            &__image {
-                max-width: 262px;
                 box-sizing: border-box;
-            }
-
-            &__info {
-                padding: 22px 150px 62px 32px;
-                display: flex;
-                flex-flow: wrap column;
-                gap: 6px;
-                position: relative;
-                color: vars.$cart-product-text-color;
-                @extend %lato_400;
-                font-size: 22px;
+                box-shadow: vars.$cart-product-box-shadow;
 
 
-                .crest-button {
-                    position: absolute;
-                    top: 28px;
-                    right: 57px;
+                &__image {
+                    max-width: 262px;
                     box-sizing: border-box;
-                    border: none;
-                    background: none;
-                    cursor: pointer;
                 }
 
-            }
+                &__info {
+                    padding: 22px 150px 62px 32px;
+                    display: flex;
+                    flex-flow: wrap column;
+                    gap: 6px;
+                    position: relative;
+                    color: vars.$cart-product-text-color;
+                    @extend %lato_400;
+                    font-size: 22px;
 
-            &__name {
-                text-align: start;
-                @extend %lato_400;
-                font-size: 24px;
-                padding-bottom: 36px;
-                color: vars.$cart-product-name-color;
-            }
 
-            &__price {
-                .value {
-                    color: vars.$pink_text_color;
-                }
-            }
-
-            &__quantity {
-                display: flex;
-                flex-direction: row;
-                gap: 24px;
-
-                .value {
-                    max-width: 44px;
-                    border: solid 1px vars.$cart-product-input-border-color;
-                    text-align: center;
-                    transition: all 0.3s;
-
-                    &:hover {
-                        @include mxns.input_hover;
+                    .crest-button {
+                        position: absolute;
+                        top: 28px;
+                        right: 57px;
+                        box-sizing: border-box;
+                        border: none;
+                        background: none;
+                        cursor: pointer;
                     }
 
-                    &:focus {
-                        outline: none;
-                        @include mxns.input_focus;
+                }
+
+                &__name {
+                    text-align: start;
+                    @extend %lato_400;
+                    font-size: 24px;
+                    padding-bottom: 36px;
+                    color: vars.$cart-product-name-color;
+                }
+
+                &__price {
+                    .value {
+                        color: vars.$pink_text_color;
+                    }
+                }
+
+                &__quantity {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 24px;
+
+                    .value {
+                        max-width: 44px;
+                        border: solid 1px vars.$cart-product-input-border-color;
+                        text-align: center;
+                        transition: all 0.3s;
+
+                        &:hover {
+                            @include mxns.input_hover;
+                        }
+
+                        &:focus {
+                            outline: none;
+                            @include mxns.input_focus;
+                        }
                     }
                 }
             }
         }
+
 
         &__buttons-box {
             display: flex;
