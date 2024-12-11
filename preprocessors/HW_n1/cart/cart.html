@@ -336,6 +336,29 @@
 
         }
 
+        productsBox.addEventListener("click", (event) => {
+            if (event.target.classList.contains("crest-button") || event.target.parentElement.classList.contains("crest-button") || event.target.parentElement.parentElement.classList.contains("crest-button")) {
+                console.log("crest-button")
+                let card = event.target.parentElement;
+                while (!card.classList.contains("cart-product")) {
+                    card = card.parentElement;
+                }
+                let name = "";
+
+                for (elem of card.lastElementChild.children) {
+                    if (elem.classList.contains("cart-product__name")) {
+                        name = elem.textContent;
+                    }
+                }
+
+                let approve = confirm(`do you wanna delete ${name}`)
+                if (approve) {
+                    card.remove();
+                }
+            }
+            console.log(event.target.classList);
+        })
+
 
 
     </script>
