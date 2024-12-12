@@ -348,15 +348,20 @@
                 for (elem of card.lastElementChild.children) {
                     if (elem.classList.contains("cart-product__name")) {
                         name = elem.textContent;
+                        console.log(name)
                     }
                 }
 
                 let approve = confirm(`do you wanna delete ${name}`)
                 if (approve) {
+                    let index = cartProducts.indexOf(cartProducts.find(item => item.name == name));
+                    index >= 0 ? cartProducts.splice(index, 1) : alert("something wrong");
+                    sessionStorage.setItem("cartProducts", JSON.stringify(cartProducts));
                     card.remove();
                 }
             }
-            console.log(event.target.classList);
+            console.log(cartProducts);
+            console.log(sessionStorage);
         })
 
 
